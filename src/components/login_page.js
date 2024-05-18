@@ -4,8 +4,8 @@ import './login_page.css';
 // import {useNavigate} 'react-router-dom';
 // const provider = new GoogleAuthProvider();
 
-
 const login_page=()=>{
+
     // const [username, setUserName] = useState("");
     // const [password, setPassword] = useState("");
     // const navigate = useNavigate();
@@ -147,9 +147,9 @@ const login_page=()=>{
                 </div>
             </div>
         </div>
+
     </div>
     );
 };
 
 export default LoginPage;
-

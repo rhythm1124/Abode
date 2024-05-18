@@ -1,12 +1,10 @@
 import './App.css';
-import React from 'react';
-import LoginPage from './components/login_page';
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import login_page from './components/login_page'
 
 function App() {
   return (
     <div>
-      <LoginPage/>
+      <login_page/>
     </div>
   );
 }

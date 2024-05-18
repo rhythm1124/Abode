@@ -4,8 +4,8 @@ import './login_page.css';
 // import {useNavigate} 'react-router-dom';
 // const provider = new GoogleAuthProvider();
 
+const login_page=()=>{
 
-const LoginPage=()=>{
     // const [username, setUserName] = useState("");
     // const [password, setPassword] = useState("");
     // const navigate = useNavigate();
@@ -137,18 +137,19 @@ const LoginPage=()=>{
                     <div className='overlay-left'>
                         <h1>Welcome Back</h1>
                         <p>To keep connected with us please login with your personal info</p>
-                        <button id='signin'>SignIn</button>
+                        <button id='login'>Login</button>
                     </div>
                     <div className='overlay-right'>
                         <h1>Hello Friends</h1>
                         <p>Enter your personal details and start journey with us</p>
-                        <button id='signin'>SignIn</button>
+                        <button id='login'>Login</button>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
     );
 };
 
-export default login_page;
+export default LoginPage;

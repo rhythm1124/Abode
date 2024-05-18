@@ -9,4 +9,8 @@ const login_page=()=>{
     );
 };
 
+<<<<<<< Updated upstream
 export default login_page;
+=======
+export default LoginPage;
+>>>>>>> Stashed changes

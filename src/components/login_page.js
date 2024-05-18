@@ -5,7 +5,7 @@ import './login_page.css';
 // const provider = new GoogleAuthProvider();
 
 
-const LoginPage=()=>{
+const login_page=()=>{
     // const [username, setUserName] = useState("");
     // const [password, setPassword] = useState("");
     // const navigate = useNavigate();

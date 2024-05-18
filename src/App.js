@@ -1,10 +1,7 @@
 import './App.css';
 import login_page from './components/login_page'
-<<<<<<< Updated upstream
 import Main from './components/main.js';
 import Navbar from './components/navbar.js';
-=======
->>>>>>> Stashed changes
 
 function App() {
   return (
@@ -15,5 +12,15 @@ function App() {
     </div>
   );
 }
+// const App = () => {
+//   return (
+//     <Router>
+//       <Routes>
+//         {/* <Route path="/" element={<WelcomePage/>} /> */}
+//         <Route path="/login" element={<login_page/>}/>
+//       </Routes>
+//     </Router>
+//   );
+// };  
 
 export default App;

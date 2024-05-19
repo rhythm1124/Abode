@@ -1,6 +1,6 @@
 import './App.css';
 import LoginPage from './components/login_page.js';
-import Main from './components/Landing-page.js';
+import Main from './components/main.js';
 import Navbar from './components/navbar.js';
 
 function App() {

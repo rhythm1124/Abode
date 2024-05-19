@@ -6,10 +6,10 @@ function Main () {
     return (
         <div className="main">
             <div className="main_container">
-                <div className="content-container">
-                    <h1>explore</h1>
-                </div>
+                <div className="parallax1"></div>
+                <div className="main-content"></div>
             </div>
+            
         </div>
     )
 }

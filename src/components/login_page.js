@@ -4,7 +4,7 @@ import './login_page.css';
 // import {useNavigate} 'react-router-dom';
 // const provider = new GoogleAuthProvider();
 
-const login_page=()=>{
+const LoginPage=()=>{
 
     // const [username, setUserName] = useState("");
     // const [password, setPassword] = useState("");

@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="navbar">
             <div className="leftside">
             <div className="logo_container">
-                <img className="logo" src={Logo} alt=""/>
+                <img className="logo" src={Logo} alt="Logo"/>
             </div>
             </div>
             <div className="rightside">
@@ -19,7 +19,7 @@ const Navbar = () => {
                     <li><input type="text" placeholder="Search" className="Search-bar" /></li>
                     </div> */}
                     <li>Categories</li>
-                    <li><img className="Cart" src={Cart} alt=""/></li>
+                    <li><img className="Cart" src={Cart} alt="Cart"/></li>
                 </ul>
             </div>
         </div>

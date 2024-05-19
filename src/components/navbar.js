@@ -15,7 +15,8 @@ const Navbar = () => {
             <div className="rightside">
                 <ul>
                     <li>Categories</li>
-                    <li>search</li>
+                    <li><input type="text" placeholder="Search" className="Search-bar" />
+                    <img className="Search-icon" alt="" src={SearchIcon} /></li>
                     <li><img className="Cart" src={Cart} alt=""/></li>
                 </ul>
             </div>

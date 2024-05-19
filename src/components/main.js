@@ -9,6 +9,7 @@ function Main () {
                 <div className="overlay">
                     <div className="content">
                         <h1>title</h1>
+                        <p>and the journey begins</p>
                     </div>
                 </div>
             </div>

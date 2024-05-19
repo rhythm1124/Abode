@@ -15,10 +15,10 @@ const Navbar = () => {
             </div>
             <div className="rightside">
                 <ul>
-                    <li>Categories</li>
-                    <div classname="search-container">
+                    {/* <div className="search-container">
                     <li><input type="text" placeholder="Search" className="Search-bar" /></li>
-                    </div>
+                    </div> */}
+                    <li>Categories</li>
                     <li><img className="Cart" src={Cart} alt=""/></li>
                 </ul>
             </div>

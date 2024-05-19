@@ -31,7 +31,10 @@
 
 /* search-bar */
 .Search-bar{
-    
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: 1rem;
 }
 
 .navbar li{

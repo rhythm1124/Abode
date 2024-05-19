@@ -36,6 +36,14 @@
     flex-grow: 1;
     justify-content: 1rem;
 }
+.Search-bar{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    max-width: 200px;
+    width: 100px;
+}
 
 .navbar li{
     margin: 0 1rem;

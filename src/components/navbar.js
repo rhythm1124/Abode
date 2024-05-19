@@ -1,15 +1,22 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import Logo from '../assets/logo.png';
+// import {Link} from 'react-router-dom';
+// import Logo from '../assets/logo.png';
 import './navbar.css';
 
 const Navbar = () => {
     return (
         <div className="navbar">
             <div className="leftside">
-            <Link to="/"><img src={Logo}/></Link>
+            {/* <Link to="/"><img src={Logo}/></Link> */}
             </div>
-            <div className="rightside"></div>
+            <div className="rightside">
+                <ul>
+                    <li>Categories</li>
+                    <li>cart</li>
+                    <li>search</li>
+                    <li>exit</li>
+                </ul>
+            </div>
         </div>
     );
 }

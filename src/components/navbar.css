@@ -26,15 +26,12 @@
     padding: 0;
 }
 
-
 .navbar li{
     margin: 0 1rem;
 }
-.navbar ul{
-    display: inline-flex;
-}
+
 .navbar li:hover{
     cursor: pointer;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 

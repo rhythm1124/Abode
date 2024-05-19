@@ -1,0 +1,21 @@
+.navbar{
+    display: inline-flex;
+    width: 100%;
+}
+
+.navbar li{
+    color: rgb(46, 61, 67);
+    font-size: 18px;
+    display: inline-flex;
+    padding:5px;
+    margin: 20px;
+    list-style: none;
+}
+.navbar ul{
+    display: inline-flex;
+}
+.navbar li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+

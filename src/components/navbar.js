@@ -15,9 +15,6 @@ const Navbar = () => {
             </div>
             <div className="rightside">
                 <ul>
-                    {/* <div className="search-container">
-                    <li><input type="text" placeholder="Search" className="Search-bar" /></li>
-                    </div> */}
                     <li>Categories</li>
                     <li><img className="Cart" src={Cart} alt="Cart"/></li>
                 </ul>
@@ -25,6 +22,10 @@ const Navbar = () => {
         </div>
     );
 }
+
+// {/* <div className="search-container">
+//                     <li><input type="text" placeholder="Search" className="Search-bar" /></li>
+//                     </div>  */}
 
 export default Navbar;
 

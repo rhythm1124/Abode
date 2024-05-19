@@ -13,7 +13,9 @@ function Main () {
             </div>
 
             <div classname="grid-containter">
-                <div className="grid-item">1</div>
+                <div className="grid-item">
+                    <img src="lamp14.jpeg" alt="chairs" className="item1" />
+                </div>
                 <div className="grid-item">1</div>
                 <div className="grid-item">1</div>
             </div>

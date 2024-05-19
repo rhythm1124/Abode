@@ -30,6 +30,21 @@
     padding: 0;
 }
 
+.navbar li{
+    margin: 0 1rem;
+}
+
+.navbar li:hover{
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
+
+/* cart icon */
+.Cart{
+    height: 28px;
+    width: auto;
+    max-width: 100%;
+}
 /* search-bar */
 /* .search-container{
     display: flex;
@@ -50,19 +65,3 @@
     border: 1px;
     border-radius: 20px;
 } */
-
-.navbar li{
-    margin: 0 1rem;
-}
-
-.navbar li:hover{
-    cursor: pointer;
-    /* text-decoration: underline; */
-}
-
-/* cart icon */
-.Cart{
-    height: 30px;
-    width: auto;
-    max-width: 100%;
-}

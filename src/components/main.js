@@ -11,6 +11,7 @@ function Main () {
                         <h1>title</h1>
                         <p>and the journey begins</p>
                     </div>
+                    
                 </div>
             </div>
 

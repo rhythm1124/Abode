@@ -8,13 +8,12 @@ import Collection from './components/Collection.js';
 function App() {
   return (
     <div>
-      <LoginPage/>
+      {/* <LoginPage/> */}
       {/* <SignupPage/> */}
-      {/* <WelcomePage/> */}
+      <WelcomePage/>
       <Navbar />
       <Main/>
       <Collection/>
-      <LoginPage/>
     </div>
   );
 }

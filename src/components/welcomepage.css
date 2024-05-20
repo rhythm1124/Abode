@@ -10,36 +10,26 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #F1F7F7;
+    background-image: url('bg\ image.jpg');
+    background-position:center;
+    background-size: cover;
+
   }
-  .image{
-    background-image:url('bg\ image.jpg') ;
-    background-size:cover;
-    height:100vh ;
-    background-position: center;
-  }
+  
   .wel{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     font-style: italic;
-    color: #477575;
-    /* display: grid; */
-    /* height:100vh; */
-    /* width:100vw; */
-    /* grid-template-columns: repeat(6,1fr); */
-    /* grid-template-rows: repeat(6,1fr);background-image:linear-gradient(#F1CBCA,#DDD3D0,#8DD7D8) ; */
+    color: #5e6710;
   }
   .web{
-    margin-top: 100px;
+    margin: 20px;
     text-align: center;
-    /* margin-left: 70px; */
-    /* background-image:linear-gradient(#F1CBCA,#DDD3D0,#8DD7D8) ; */
-    /* width: 50vh; */
-    /* background-color: red; */
   }
   p{
     justify-content: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 170px;
+    margin-right: 170px;
   }
   .web h1{
     margin-bottom: 20px;
@@ -53,7 +43,7 @@ body{
     height: 40px;
     font-size: 18px;
     color:whitesmoke;
-    background-color: #477575;
+    background-color: #5e6710;
     border-radius: 10px;
     border: none;
     box-shadow: 4px 4px 4px grey;

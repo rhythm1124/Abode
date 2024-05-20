@@ -4,10 +4,6 @@ import './App.css';
 // import WelcomePage from './components/welcomepage';
 import Main from './components/main.js';
 import Navbar from './components/navbar.js';
-<<<<<<< HEAD
-import Collection from './components/Collection.js';
-import ContactUs from './components/ContactUs.js';
-=======
 // import Collection from './components/Collection.js';
 // import CartDropdown from './components/CartDropdown.js';
 >>>>>>> 050957e9640726525a31dd359e732c8d2ae9140b
@@ -17,9 +13,6 @@ function App() {
       {/* <LoginPage/> */}
       {/* <SignupPage/> */}
       {/* <WelcomePage/> */}
-<<<<<<< HEAD
-      <ContactUs/>
-=======
       <Navbar />
       {/* <CartDropdown/> */}
       <Main/>

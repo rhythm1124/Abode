@@ -10,17 +10,23 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #F1F7F7;
+  }
+  .outer{
+    height: 100vh;
     background-image: url('bg\ image.jpg');
     background-position:center;
     background-size: cover;
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
   }
-  
   .wel{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     font-style: italic;
     color: #5e6710;
+    /* margin-top: 100px; */
   }
   .web{
     margin: 20px;

@@ -4,6 +4,7 @@ import backgroundImage from './bg image.jpg'
 
 const WelcomePage=()=>{
     return(
+        <div className="outer">
         <div className='wel'>
       <div className='web'>
         <h1>Welcome to Our Website</h1>
@@ -14,7 +15,12 @@ const WelcomePage=()=>{
         <button className='bttn' >Login</button>
         {/* onClick={handleLoginCLick} */}
       </div>
+      {/* <div className='image'>
+        <img src={backgroundImage} alt="Welcome" className='image'/>
+        
+      </div> */}
       {/* <button className='bttn'>Login</button> */}
+    </div>
     </div>
     );
 };

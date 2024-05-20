@@ -9,11 +9,6 @@
     width: 100%;
 }
 
-.grid-item{
-    padding: 16px;
-    text-align: center;
-}
-
 @media (min-width: 600px){
     .grid-conatiner{
         grid-template-columns: repeat(2, 1fr);

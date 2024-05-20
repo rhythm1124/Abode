@@ -1,7 +1,15 @@
 import React from 'react';
 import './CartDropdown.css';
 
-const CartDropdown = ({ cartItems, onIncrement, onDecrement, onDelete, onCheckout }) => {
+const CartDropdown = ({ cartItems, onIncrement, onDecrement, onDelete, onCheckout, onClearCart }) => {
+
+  const handleCheckout = () => {
+    // Call the onCheckout function to perform checkout related actions
+    onCheckout();
+    // Call the onClearCart function to clear the cart
+    onClearCart();
+  };
+
   return (
     <div className="cart-dropdown">
       <h2>Shopping Cart</h2>
@@ -25,7 +33,7 @@ const CartDropdown = ({ cartItems, onIncrement, onDecrement, onDelete, onCheckou
         ))
       )}
       {cartItems.length > 0 && (
-        <button className="checkout-button" onClick={onCheckout}>
+        <button className="checkout-button" onClick={handleCheckout}>
           Checkout
         </button>
       )}

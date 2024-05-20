@@ -38,6 +38,10 @@ const Collection = () => {
     alert('Proceeding to checkout');
   };
 
+  const handleClearCart = () => {
+    setCartItems([]); // Clear the cart by setting cartItems to an empty array
+  };
+
   return (
     <div className="collection-container">
       <div className="content-container">
@@ -65,6 +69,7 @@ const Collection = () => {
         onDecrement={handleDecrement}
         onDelete={handleDelete}
         onCheckout={handleCheckout}
+        onClearCart={handleClearCart} // Pass the handleClearCart function
       />
     </div>
   );

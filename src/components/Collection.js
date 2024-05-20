@@ -1,6 +1,7 @@
 import React from 'react';
 import './Collection.css';
-import lamp from '../assets/lamp12.jpeg'
+import {CollectionList} from './Collection-item-list.js';
+import CltItem from './Collection-item.js';
 
 const Collection = () => {
     return(
@@ -11,13 +12,17 @@ const Collection = () => {
             </div>
             <div className="collection-grid-container">
                 <div className="collection-item">
-                    <img src={lamp} alt="lamp" className="collection-item-img"/>
-                    <h2>title</h2>
-                    <p>know more</p>
-                    <button className="item-increment">+</button>
-                    <input type="text" className="output-display"></input>
-                    <button className="item-decrement">-</button>
-                    <button className="item-delete">Del</button>
+                    {CollectionList.map((item, key) => {
+                    {console.log(item.name)}
+                    return(
+                        <CltItem
+                            key={item} 
+                            img={item.image} 
+                            img_title={item.name} 
+                            price={item.price}
+                        />
+                    );
+                })}
                 </div>
             </div>
         </div>

@@ -1,9 +1,9 @@
 import React from 'react';
 // import { useNavigate } from 'react-router-dom';
-import './login_form.css';
+import './login_page';
 // import { auth } from '../firebase'
 // import { signInWithEmailAndPassword, getAuth, signInWithPopup, RecaptchaVerifier , GoogleAuthProvider, signInWithPhoneNumber  } from "firebase/auth";
-import backgroundImage from'./main0.png';
+import backgroundImage from './bg image3.jpg';
 
 // const provider = new GoogleAuthProvider();
 
@@ -94,7 +94,7 @@ const PhoneSignup=()=>{
                     <input type='text' placeholder='Phone Number*' />
                     {/* onChange={handleUsernameChange} required */}
                 </div>
-                    <center><button className='submit' onClick={onLogin}>Login</button></center>
+                    <center><button className='submit'>Login</button></center>
                     {/* onClick={onLogin} */}
                 <div className='register-link'>
                     <p>Don't have an account?  <a href='#'>SignUp</a></p>

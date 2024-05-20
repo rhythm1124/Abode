@@ -10,11 +10,11 @@ function App() {
     <div>
       {/* <LoginPage/> */}
       {/* <SignupPage/> */}
-      <WelcomePage/>
+      {/* <WelcomePage/> */}
       <Navbar />
-      <Main/>
+      {/* <Main/> */}
       <Collection/>
-      <SignupPage/>
+      {/* <SignupPage/> */}
     </div>
   );
 }

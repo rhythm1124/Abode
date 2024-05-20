@@ -9,20 +9,51 @@
     width: 100%;
 }
 
-@media (min-width: 600px){
-    .grid-conatiner{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
-@media (min-width: 900px){
-    .grid-conatiner{
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+/* Container for the buttons and input */
+.tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Space between the elements */
+  }
+  
+  /* Buttons */
+  .tags button {
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px 12px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  /* Input */
+  .tags input {
+    width: 40px; /* Fixed width for the input */
+    text-align: center; /* Center align the text */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px; /* Padding inside the input */
+  }
 
-@media (min-width: 1200px){
-    .grid-conatiner{
-        grid-template-columns: repeat(4, 1fr);
+  /* Delete button */
+  .tags .del {
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px 12px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .tags {
+      flex-direction: column; /* Stack elements vertically on small screens */
+      align-items: stretch; /* Stretch elements to fill the container */
     }
-}
+  
+    .tags button, .tags input[type="text"], .tags .del {
+      width: 100%; /* Full width for each element */
+      text-align: center; /* Center align text in each element */
+      margin-bottom: 8px; /* Space between stacked elements */
+    }
+  }
+  

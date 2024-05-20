@@ -15,7 +15,6 @@ function App() {
       <Main/>
       <Collection/>
       <SignupPage/>
-      {/* <WelcomePage/> */}
     </div>
   );
 }

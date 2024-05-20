@@ -1,11 +1,13 @@
 import './App.css';
 import LoginPage from './components/login_page';
 import SignupPage from './components/signup_page';
+import WelcomePage from './components/welcomepage';
 function App() {
   return (
     <div>
       {/* <LoginPage/> */}
-      <SignupPage/>
+      {/* <SignupPage/> */}
+      <WelcomePage/>
     </div>
   );
 }

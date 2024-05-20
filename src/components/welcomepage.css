@@ -10,17 +10,14 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #F1F7F7;
-    background-position:right; 
-  }
-  /* .image{
-    display: grid;
+    background-image:url('bg\ image.jpg') no-repeat;
     background-size:cover;
     height:100vh ;
-    grid-column-start: 4;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 7;
-    background-image:linear-gradient(#F1CBCA,#DDD3D0,#8DD7D8) ;
+    background-position: center;
+  }
+  /* .image{
+    
+    background-image:url('bg\ image.jpg') ;
   } */
   .wel{
     font-family:Verdana, Geneva, Tahoma, sans-serif;

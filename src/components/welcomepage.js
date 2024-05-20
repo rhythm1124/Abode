@@ -1,5 +1,6 @@
 import React from "react";
 import './welcomepage.css';
+import backgroundImage from './bg image.jpg'
 
 const WelcomePage=()=>{
     return(
@@ -13,10 +14,10 @@ const WelcomePage=()=>{
         <button className='bttn' >Login</button>
         {/* onClick={handleLoginCLick} */}
       </div>
-      {/* <div className='image'>
+      <div className='image'>
         <img src={backgroundImage} alt="Welcome" className='image'/>
         
-      </div> */}
+      </div>
       {/* <button className='bttn'>Login</button> */}
     </div>
     );

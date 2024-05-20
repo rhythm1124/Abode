@@ -1,0 +1,28 @@
+.grid-conatiner{
+    display: grid;
+    gap: 16px;
+    padding: 16px;
+}
+
+.grid-item{
+    padding: 16px;
+    text-align: center;
+}
+
+@media (min-width: 600px){
+    .grid-conatiner{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px){
+    .grid-conatiner{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px){
+    .grid-conatiner{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

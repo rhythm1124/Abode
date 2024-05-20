@@ -19,19 +19,24 @@ function CltItem({img_title, img, price}){
   };
 
     return(
-        <div className="Item">
-      <img src={img} className="img" alt="product" />
-      &nbsp;
-      <h1>{img_title}</h1>
-      <p>${price}</p>
-      <br />
-      <div className="tags">
-        <button onClick={handleIncrement}>+</button>
-        <input type="text" value={quantity} readOnly />
-        <button onClick={handleDecrement}>-</button>
-        <button className="del" onClick={handleDelete}>Del</button>
+      <div className="grid-container">
+        <div className="grid-item">
+          <img src={img} className="img" alt="product" />
+          &nbsp;
+          <h1>{img_title}</h1>
+          <p>${price}</p>
+
+          <br />
+
+          <div className="tags">
+            <button onClick={handleIncrement}>+</button>
+            <input type="text" value={quantity} readOnly />
+            <button onClick={handleDecrement}>-</button>
+            <button className="del" onClick={handleDelete}>Del</button>
+          </div>
+
+        </div>
       </div>
-    </div>
     );
 }
 

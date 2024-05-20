@@ -21,7 +21,7 @@ function CltItem({img_title, img, price}){
     return(
       <div className="grid-container">
         <div className="grid-item">
-          <img src={img} className="img" alt="product" />
+          <img src={img} className="item-img" alt="product" />
           &nbsp;
           <h1>{img_title}</h1>
           <p>${price}</p>

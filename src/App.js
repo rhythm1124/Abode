@@ -4,7 +4,7 @@ import SignupPage from './components/signup_page';
 function App() {
   return (
     <div>
-      <LoginPage/>
+      {/* <LoginPage/> */}
       <SignupPage/>
     </div>
   );

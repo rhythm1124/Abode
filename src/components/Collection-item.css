@@ -4,6 +4,11 @@
     padding: 16px;
 }
 
+.item-img{
+    height: 400px;
+    width: 100%;
+}
+
 .grid-item{
     padding: 16px;
     text-align: center;

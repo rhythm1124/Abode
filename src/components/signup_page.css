@@ -11,11 +11,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
     justify-content: center;
     align-items: center;
+    display: flex;
     min-height: 100vh;
-    /* background: url('./main0.png')
+    background: url('bg\ image3.jpg')
     no-repeat;
     background-size: cover;
-    background-position: center; */
+    background-position: center;
   }
 /* .background-image{
     object-fit: cover;
@@ -26,7 +27,7 @@ body {
     width: 450px;
     background:transparent;
     border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(10px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     height: 450px;
     border-radius: 20px;
@@ -36,7 +37,7 @@ body {
   .signup h1{
     font-size: 36px;
     text-align: center;
-    color: grey;
+    color: rgb(56,54,54);
   }
   .input-boxa input{
     width: 87%;
@@ -88,13 +89,13 @@ body {
     padding-left: 20px;
   }
   .input-boxa input::placeholder{
-    color: gray;
+    color: rgb(56,54,54);
   }
   .input-box0 input::placeholder{
-    color: gray;
+    color: rgb(56,54,54);
   }
   .input-boxb input::placeholder{
-    color: gray;
+    color: rgb(56,54,54);
   }
 
 .submit1{
@@ -107,7 +108,8 @@ body {
     margin-left: 20px;
     font-size: 19px;
     font-family: sans-serif;
-    color: gray;
+    color: rgb(56,54,54);
+    background-color: #D6DDAC;
 }
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

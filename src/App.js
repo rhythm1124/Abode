@@ -5,8 +5,8 @@ import WelcomePage from './components/welcomepage';
 function App() {
   return (
     <div>
-      <LoginPage/>
-      {/* <SignupPage/> */}
+      {/* <LoginPage/> */}
+      <SignupPage/>
       {/* <WelcomePage/> */}
     </div>
   );

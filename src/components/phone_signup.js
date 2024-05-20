@@ -1,12 +1,13 @@
 import React from 'react';
-import './login_page.css';
-import backgroundImage from './bg image3.jpg';
+// import { useNavigate } from 'react-router-dom';
+import './login_form.css';
 // import { auth } from '../firebase'
-// import {useNavigate} 'react-router-dom';
+// import { signInWithEmailAndPassword, getAuth, signInWithPopup, RecaptchaVerifier , GoogleAuthProvider, signInWithPhoneNumber  } from "firebase/auth";
+import backgroundImage from'./main0.png';
+
 // const provider = new GoogleAuthProvider();
 
-
-const login_page=()=>{
+const PhoneSignup=()=>{
     // const [username, setUserName] = useState("");
     // const [password, setPassword] = useState("");
     // const navigate = useNavigate();
@@ -54,11 +55,12 @@ const login_page=()=>{
     //     setTimeout(() => {
     //         navigate('/signup');
     //     },1000);
-        
     // };
-    // const phoneClick = () => {
-    //     navigate('/phone_sign_in');
+
+    // const goBack = () => {
+    //     navigate('/login')
     // }
+
     // const onLogin = (e) => {
     //     console.log("Signing in: " + username + ", " + password);
     //     e.preventDefault();
@@ -78,39 +80,29 @@ const login_page=()=>{
        
     // }
     return(
-        <div className='outer1'>
         <div className='login'>
-        <h1>Login</h1>
-        <div className='abc'>
-        <button className="btn" >
-        {/* onClick={googleLogIn} */}
-            <h3>Continue With Google</h3></button>
-        <button  className='btn1' >
-        {/* onClick={phoneClick} */}
-            <h3>Continue With PhoneNo.</h3>
-        </button>
-        <hr className='line'></hr>
+            <h1>Login</h1>
+            {/* {console.log("Buidling")} */}
+            <div className='abc'>
+            <button className="btn" >
+            {/* onClick={goBack} */}
+                <h3>Go Back</h3></button>
+            <hr className='line'></hr>
+            </div>
+            <form>
+                <div className='input-box'>
+                    <input type='text' placeholder='Phone Number*' />
+                    {/* onChange={handleUsernameChange} required */}
+                </div>
+                    <center><button className='submit' onClick={onLogin}>Login</button></center>
+                    {/* onClick={onLogin} */}
+                <div className='register-link'>
+                    <p>Don't have an account?  <a href='#'>SignUp</a></p>
+                    {/* onClick={handleSignUpClick} */}
+                </div>
+            </form>
         </div>
-        <form>
-            <div className='input-box'>
-                <input type='text' placeholder='Username*' />
-                {/* onClick={handleUsernameChange}required */}
-            </div>
-            <div className='input-box1'>
-                <input type='password' placeholder='Password*' />
-                {/* onChange={handlePasswordChange} required */}
-            </div>
-                <center><button className='submit' >Login</button></center>
-                {/* onClick={onLogin} */}
-            <div className='register-link'>
-                <p>Don't have an account?<a href='#' >SignUp</a></p>
-                {/* onClick={handleSignUpClick} */}
-            </div>
-        </form>
-    </div>
-    </div>
     );
 };
 
-export default login_page;
-
+export default PhoneSignup;

@@ -101,7 +101,7 @@ const login_page=()=>{
                 <center><button className='submit' >Login</button></center>
                 {/* onClick={onLogin} */}
             <div className='register-link'>
-                <p>Don't have an account?  <a href='#' >SignUp</a></p>
+                <p>Don't have an account?<a href='#' >SignUp</a></p>
                 {/* onClick={handleSignUpClick} */}
             </div>
         </form>

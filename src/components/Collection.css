@@ -20,7 +20,7 @@
 .collection-grid-container{
     padding: 20px;
     margin: 0 auto;
-    /* display: flex; */
+    display: flex;
     text-align: center;
 }
 
@@ -28,19 +28,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    gap: 20px;
+    gap: 10px;
     text-align: center;
     min-width: 200px;
-}
-
-.collection-item-img{
-    height: 200px;
-    width: 100%;
-}
-.collection-item h2{
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-.collection-item p{
-    font-weight: bold;
 }

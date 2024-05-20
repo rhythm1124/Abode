@@ -5,7 +5,8 @@
 }
 
 .item-img{
-    height: 400px;
+    object-fit: cover;
+    height: 420px;
     width: 100%;
 }
 
@@ -15,11 +16,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
     gap: 8px; /* Space between the elements */
   }
   
   /* Buttons */
   .tags button {
+    background-color: #bcc681;
     border: none; /* Remove default border */
     border-radius: 4px; /* Rounded corners */
     padding: 8px 12px; /* Padding for the button */
@@ -31,6 +34,7 @@
     width: 40px; /* Fixed width for the input */
     text-align: center; /* Center align the text */
     border: none;
+    background-color: #d6ddac;
     border-radius: 4px; /* Rounded corners */
     padding: 8px; /* Padding inside the input */
   }
@@ -41,19 +45,5 @@
     border-radius: 4px; /* Rounded corners */
     padding: 8px 12px; /* Padding for the button */
     cursor: pointer; /* Pointer cursor on hover */
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 600px) {
-    .tags {
-      flex-direction: column; /* Stack elements vertically on small screens */
-      align-items: stretch; /* Stretch elements to fill the container */
-    }
-  
-    .tags button, .tags input[type="text"], .tags .del {
-      width: 100%; /* Full width for each element */
-      text-align: center; /* Center align text in each element */
-      margin-bottom: 8px; /* Space between stacked elements */
-    }
   }
   

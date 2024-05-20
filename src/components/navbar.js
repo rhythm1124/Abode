@@ -14,7 +14,8 @@ const Navbar = () => {
             </div>
             <div className="rightside">
                 <ul>
-                    <li>Categories</li>
+                    <li>Collection</li>
+                    <li>Logout</li>
                     <li><img className="Cart" src={Cart} alt="Cart"/></li>
                 </ul>
             </div>

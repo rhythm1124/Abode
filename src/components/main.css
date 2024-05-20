@@ -34,10 +34,8 @@
 }
 .grid-item{
     background-color: #f1f4dd;
-    /* border-radius: 5px; */
     text-align: center;
     min-width: 200px;
-    /* flex-shrink: 0; */
 }
 .grid-img{
     max-width: 100%;

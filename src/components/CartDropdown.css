@@ -1,6 +1,3 @@
-/* CartDropdown.css */
-
-/* Container for the cart dropdown */
 .cart-dropdown {
   position: fixed;
   right: 0;
@@ -13,47 +10,40 @@
   overflow-y: auto;
   z-index: 1000;
 }
-
-/* Heading */
 .cart-dropdown h2 {
   margin-top: 0;
   margin-bottom: 16px;
 }
 
-/* Individual cart item */
 .cart-item {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ddd;
   padding: 16px 0;
 }
 
-/* Product image */
 .product-image {
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 60px;
   object-fit: cover;
   border-radius: 8px;
 }
 
-/* Product details */
 .product-details {
+  display: inline-block;
   flex-grow: 1;
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
-/* Container for the buttons and input */
 .tags {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-/* Buttons */
 .tags button {
   background-color: #bcc681;
-  color: white;
   border: none;
   border-radius: 4px;
   padding: 8px 12px;
@@ -61,13 +51,11 @@
   transition: background-color 0.3s;
 }
 
-/* Hover effect for buttons */
 .tags button:hover {
   background-color: #a4ae5c;
 }
 
-/* Input */
-.tags input[type="text"] {
+.tags input {
   width: 40px;
   text-align: center;
   border: 1px solid #ddd;
@@ -75,7 +63,6 @@
   padding: 8px;
 }
 
-/* Delete button */
 .tags .del {
   background-color: #bcc681;
   border: none;

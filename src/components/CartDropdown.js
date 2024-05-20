@@ -10,9 +10,9 @@ const CartDropdown = ({ cartItems, onIncrement, onDecrement, onDelete, onCheckou
       ) : (
         cartItems.map(item => (
           <div key={item.id} className="cart-item">
-            <img src={item.image} alt={item.name} className="product-image" />
+            <img src={item.img} alt={item.img_title} className="product-image" />
             <div className="product-details">
-              <h3>{item.name}</h3>
+              <h4>{item.img_title}</h4>
               <p>${item.price.toFixed(2)}</p>
             </div>
             <div className="tags">

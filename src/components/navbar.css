@@ -45,23 +45,3 @@
     width: auto;
     max-width: 100%;
 }
-/* search-bar */
-/* .search-container{
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    justify-content: 1rem;
-}
-.Search-bar{
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 20px;
-    max-width: 200px;
-    width: 180px;
-}
-.Search-bar:hover{
-    cursor: pointer;
-    border: 1px;
-    border-radius: 20px;
-} */

@@ -20,23 +20,22 @@
 .collection-grid-container{
     padding: 20px;
     margin: 0 auto;
-    display: flex;
-    max-width: 1200px;
+    /* display: flex; */
     text-align: center;
 }
 
 .collection-item{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    gap: 30px;
+    gap: 20px;
     text-align: center;
     min-width: 200px;
 }
 
 .collection-item-img{
+    height: 200px;
     width: 100%;
-    height: 320px;
 }
 .collection-item h2{
     margin-top: 10px;

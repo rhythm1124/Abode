@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
 }    
 body {
     margin: 0;
@@ -10,7 +9,6 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -49,7 +47,6 @@ body {
     border: 2px solid rgba(192, 186, 186, .5);
     border-radius: 40px;
     font-size: 16px;
-    /* margin: 10px; */
     margin-top:60px;
     padding-left: 20px;
 
@@ -99,37 +96,7 @@ body {
   .input-boxb input::placeholder{
     color: gray;
   }
-/* .abc{
-    text-align: center;
-    height: 40px;
-    padding-right: 5px;
-    padding-left: 5px;
-}
-.line{
-    width: 80%;
-    height: 1px;
-    margin-top: 20px;
-    margin-left: 50px;
-} */
-/* .btn{
-    width: 85%;
-    height: 40px;
-    border: 2px solid rgb(192, 186, 186, .5);
-    border-radius: 40px;
-    border-color: gainsboro;
-    margin: 20px;
-    color: gray;
 
-}
-.btn1{
-    width: 85%;
-    height: 40px;
-    border-radius: 40px;
-    border: 2px solid rgb(192, 186, 186, .5);
-    border-color: gainsboro;
-    color: gray;
-    
-} */
 .submit1{
     width: 250px;
     margin-top: 30px;
@@ -142,15 +109,8 @@ body {
     font-family: sans-serif;
     color: gray;
 }
-/* .register-link{
-    text-align: center;
-    margin-top: 30px;
-    font-size: 17px;
-    color: grey;
-} */
-  
-  code {
+code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
-  }
+}
   

@@ -15,11 +15,6 @@ const WelcomePage=()=>{
         <button className='bttn' >Login</button>
         {/* onClick={handleLoginCLick} */}
       </div>
-      {/* <div className='image'>
-        <img src={backgroundImage} alt="Welcome" className='image'/>
-        
-      </div> */}
-      {/* <button className='bttn'>Login</button> */}
     </div>
     </div>
     );

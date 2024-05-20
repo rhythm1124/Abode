@@ -1,5 +1,6 @@
 import React from 'react';
 import './login_page.css';
+import backgroundImage from './bg image1.jpg';
 // import { auth } from '../firebase'
 // import {useNavigate} 'react-router-dom';
 // const provider = new GoogleAuthProvider();

@@ -12,10 +12,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
     justify-content: center;
     display: flex;
-    align-items: center;
     min-height: 100vh;
-    /* background:  */
-    
+    background:url('bg\ image1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
   }
   .login{
     width: 450px;
@@ -73,9 +75,7 @@ body {
     color: gray;
   }
 .abc{
-    /* justify-content: space-between; */
     text-align: center;
-    /* margin-bottom: 50px; */
     height: 40px;
     padding-right: 5px;
     padding-left: 5px;
@@ -94,7 +94,6 @@ body {
     border-color: gainsboro;
     margin: 20px;
     color: gray;
-    /* padding-left: 20px; */
 
 }
 .btn1{
@@ -119,12 +118,15 @@ body {
     color: gray;
 }
 .register-link{
-    text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 17px;
     color: grey;
+} 
+a{
+  display: flex;
+  margin-top: -25px;
+  margin-left: 80px;
 }
-  
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;

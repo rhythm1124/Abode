@@ -13,7 +13,7 @@ function Main () {
                     </div>
             </div>
 
-            <div classname="grid-containter">
+            <div className="grid-containter">
                 <div className="container">
                     <div className="grid-item">
                         <img src={lamp} alt="chairs" className="grid-img" />

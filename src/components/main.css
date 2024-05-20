@@ -19,6 +19,7 @@
 }
 
 .grid-container{
+    display: flex;
     padding: 20px;
     margin: 0 auto;
     max-width: 1200px;
@@ -36,9 +37,6 @@
     padding: 10px;
     text-align: center;
 }
-/* .grid-item:hover{
-    transform: scale(1.1);
-} */
 .grid-img{
     max-width: 100%;
     height: auto;

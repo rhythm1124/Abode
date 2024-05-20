@@ -26,12 +26,27 @@ import shelf4 from '../assets/shelf4.jpeg';
 import carpet1 from '../assets/carpet1.jpeg';
 import carpet2 from '../assets/carpet2.jpeg';
 import carpet3 from '../assets/carpet3.jpeg';
+import carpet4 from '../assets/carpet4.jpeg';
 import curtain1 from '../assets/curtain1.jpeg';
 import curtain2 from '../assets/curtain2.jpeg';
 import curtain6 from '../assets/curtain6.jpeg';
 import curtain7 from '../assets/curtain7.jpeg';
 
 // lamps and chandeliers
+import chan2 from '../assets/chan2.jpg';
+import chan3 from '../assets/chan3.jpg';
+import chan4 from '../assets/chan4.jpg';
+import chan9 from '../assets/chan9.jpg';
+import lamp1 from '../assets/lamp1.jpeg';
+import lamp4 from '../assets/lamp4.jpeg';
+import lamp10 from '../assets/lamp10.jpeg';
+import lamp13 from '../assets/lamp13.jpeg';
+
+// mirrors
+import mirror2 from '../assets/mirror2.jpeg';
+import mirror5 from '../assets/mirror5.jpeg';
+import mirror1 from '../assets/mirror1.jpeg';
+import mirror7 from '../assets/mirror7.jpeg';
 
 
 export const CollectionList = [
@@ -142,6 +157,11 @@ export const CollectionList = [
     },
     {
         img_title : "white-wood",
+        img : carpet4,
+        price: 100,
+    },
+    {
+        img_title : "white-wood",
         img : curtain1,
         price: 100,
     },
@@ -162,112 +182,62 @@ export const CollectionList = [
     },
     {
         img_title : "white-wood",
-        img : curtain2,
+        img : chan2,
         price: 100,
     },
     {
         img_title : "white-wood",
-        img : curtain2,
+        img : chan3,
         price: 100,
     },
     {
         img_title : "white-wood",
-        img : curtain2,
+        img : chan4,
         price: 100,
     },
     {
         img_title : "white-wood",
-        img : curtain2,
+        img : chan9,
         price: 100,
     },
     {
         img_title : "white-wood",
-        img : curtain2,
+        img : lamp1,
         price: 100,
     },
     {
         img_title : "white-wood",
-        img : curtain2,
+        img : lamp4,
         price: 100,
     },
     {
         img_title : "white-wood",
-        img : curtain2,
+        img : lamp10,
         price: 100,
     },
     {
         img_title : "white-wood",
-        img : curtain2,
+        img : lamp13,
         price: 100,
     },
     {
         img_title : "white-wood",
-        img : curtain2,
+        img : mirror2,
         price: 100,
     },
     {
         img_title : "white-wood",
-        img : curtain2,
+        img : mirror5,
         price: 100,
     },
     {
         img_title : "white-wood",
-        img : curtain2,
+        img : mirror1,
         price: 100,
     },
     {
         img_title : "white-wood",
-        img : curtain2,
-        price: 100,
-    },
-    {
-        img_title : "white-wood",
-        img : curtain2,
-        price: 100,
-    },
-    {
-        img_title : "white-wood",
-        img : curtain2,
-        price: 100,
-    },
-    {
-        img_title : "white-wood",
-        img : curtain2,
-        price: 100,
-    },
-    {
-        img_title : "white-wood",
-        img : curtain2,
-        price: 100,
-    },
-    {
-        img_title : "white-wood",
-        img : curtain2,
-        price: 100,
-    },
-    {
-        img_title : "white-wood",
-        img : curtain2,
-        price: 100,
-    },
-    {
-        img_title : "white-wood",
-        img : curtain2,
-        price: 100,
-    },
-    {
-        img_title : "white-wood",
-        img : curtain2,
-        price: 100,
-    },
-    {
-        img_title : "white-wood",
-        img : curtain2,
-        price: 100,
-    },
-    {
-        img_title : "white-wood",
-        img : curtain2,
+        img : mirror7,
         price: 100,
     },
 ];

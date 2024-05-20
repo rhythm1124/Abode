@@ -9,11 +9,16 @@ function App() {
   return (
     <div>
       {/* <LoginPage/> */}
+<<<<<<< HEAD
       {/* <SignupPage/> */}
       <WelcomePage/>
       <Navbar />
       <Main/>
       <Collection/>
+=======
+      <SignupPage/>
+      {/* <WelcomePage/> */}
+>>>>>>> 63d5219f60b2c933f1aab28ae4af3d336e2b2c1c
     </div>
   );
 }

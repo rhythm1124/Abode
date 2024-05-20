@@ -1,5 +1,6 @@
 import React from 'react';
 // import {Link} from 'react-router-dom';
+import lamp from '../assets/lamp12.jpeg'
 import './main.css';
 
 function Main () {
@@ -13,11 +14,27 @@ function Main () {
             </div>
 
             <div classname="grid-containter">
-                <div className="grid-item">
-                    <img src="lamp14.jpeg" alt="chairs" className="item1" />
+                <div className="container">
+                    <div className="grid-item">
+                        <img src={lamp} alt="chairs" className="grid-img" />
+                        <h2>chair</h2>
+                        <p>200</p>
+                    </div>
                 </div>
-                <div className="grid-item">1</div>
-                <div className="grid-item">1</div>
+                <div className="container">
+                    <div className="grid-item">
+                        <img src={lamp} alt="chairs" className="grid-img" />
+                        <h2>chair</h2>
+                        <p>200</p>
+                    </div>
+                </div>
+                <div className="container">
+                    <div className="grid-item">
+                        <img src={lamp} alt="chairs" className="grid-img" />
+                        <h2>chair</h2>
+                        <p>200</p>
+                    </div>
+                </div>
             </div>
 
         </div>

@@ -106,14 +106,8 @@ const login_page=()=>{
                 {/* onClick={handleSignUpClick} */}
             </div>
         </form>
-<<<<<<< HEAD
-
-      </div>
-
-=======
     </div>
     </div>
->>>>>>> 63d5219f60b2c933f1aab28ae4af3d336e2b2c1c
     );
 };
 

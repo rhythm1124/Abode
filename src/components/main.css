@@ -21,7 +21,7 @@
 .grid-container{
     padding: 20px;
     margin: 0 auto;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     text-align: center;
 }
 .container{
@@ -34,7 +34,7 @@
     background-color: #f1f4dd;
     border-radius: 5px;
     text-align: center;
-    min-width: 200px;
+    min-width: 100px;
     flex-shrink: 0;
 }
 .grid-img{

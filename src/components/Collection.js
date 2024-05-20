@@ -1,32 +1,74 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Collection.css';
-import {CollectionList} from './Collection-item-list.js';
+import { CollectionList } from './Collection-item-list.js';
 import CltItem from './Collection-item.js';
+import CartDropdown from './CartDropdown';
 
 const Collection = () => {
-    return(
-        <div className="collection-container">
-            <div className="content-container">
-                <h1>title</h1>
-                <p>summary types</p>
-            </div>
-            <div className="collection-grid-container">
-                <div className="collection-item">
-                    {CollectionList.map((item, key) => {
-                    {console.log(item.name)}
-                    return(
-                        <CltItem
-                            key={item} 
-                            img={item.img} 
-                            img_title={item.img_title} 
-                            price={item.price}
-                        />
-                    );
-                })}
-                </div>
-            </div>
+  const [cartItems, setCartItems] = useState([]);
+
+  const addToCart = (item) => {
+    const existingItem = cartItems.find(cartItem => cartItem.id === item.id);
+    if (existingItem) {
+      setCartItems(cartItems.map(cartItem =>
+        cartItem.id === item.id ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem
+      ));
+    } else {
+      setCartItems([...cartItems, { ...item, quantity: 1 }]);
+    }
+  };
+
+  const handleIncrement = (id) => {
+    setCartItems(cartItems.map(cartItem =>
+      cartItem.id === id ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem
+    ));
+  };
+
+  const handleDecrement = (id) => {
+    setCartItems(cartItems.map(cartItem =>
+      cartItem.id === id && cartItem.quantity > 1 ? { ...cartItem, quantity: cartItem.quantity - 1 } : cartItem
+    ));
+  };
+
+  const handleDelete = (id) => {
+    setCartItems(cartItems.filter(cartItem => cartItem.id !== id));
+  };
+
+  const handleCheckout = () => {
+    alert('Proceeding to checkout');
+    // Add checkout logic here
+  };
+
+  return (
+    <div className="collection-container">
+      <div className="content-container">
+        <h1>title</h1>
+        <p>summary types</p>
+      </div>
+      <div className="collection-grid-container">
+        <div className="collection-item">
+          {CollectionList.map((item, key) => {
+            return (
+              <CltItem
+                key={item.id}
+                img={item.img}
+                img_title={item.img_title}
+                price={item.price}
+                addToCart={() => addToCart(item)} // Pass the addToCart function
+              />
+            );
+          })}
         </div>
-    );
-}
+      </div>
+      <CartDropdown
+        cartItems={cartItems}
+        onIncrement={handleIncrement}
+        onDecrement={handleDecrement}
+        onDelete={handleDelete}
+        onCheckout={handleCheckout}
+      />
+    </div>
+  );
+};
 
 export default Collection;

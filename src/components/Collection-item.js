@@ -1,42 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Collection-item.css';
 
-function CltItem({img_title, img, price}){
-    const [quantity, setQuantity] = useState(0);
-
-  const handleIncrement = () => {
-    setQuantity(quantity + 1);
-  };
-
-  const handleDecrement = () => {
-    if (quantity > 0) {
-      setQuantity(quantity - 1);
-    }
-  };
-
-  const handleDelete = () => {
-    setQuantity(0);
-  };
-
-    return(
-      <div className="grid-container">
-        <div className="grid-item">
-          <img src={img} className="item-img" alt="product"/>
-          <h2>{img_title}</h2>
-          <p>${price}</p>
-
-          <br />
-
-          <div className="tags">
-            <button onClick={handleIncrement}>+</button>
-            <input type="text" value={quantity} readOnly />
-            <button onClick={handleDecrement}>-</button>
-            <button className="del" onClick={handleDelete}>Del</button>
-          </div>
-
-        </div>
-      </div>
-    );
-}
+const CltItem = ({ img, img_title, price, addToCart }) => {
+  return (
+    <div className="grid-item">
+      <img src={img} alt={img_title} />
+      <h3>{img_title}</h3>
+      <p>${price.toFixed(2)}</p>
+      <button onClick={addToCart}>Add to Cart</button>
+    </div>
+  );
+};
 
 export default CltItem;

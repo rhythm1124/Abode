@@ -5,7 +5,7 @@ import './App.css';
 // import Main from './components/main.js';
 import Navbar from './components/navbar.js';
 import Collection from './components/Collection.js';
-import Cart from './components/Cart.js';
+import CartDropdown from './components/CartDropdown.js';
 function App() {
   return (
     <div>
@@ -13,7 +13,7 @@ function App() {
       {/* <SignupPage/> */}
       {/* <WelcomePage/> */}
       <Navbar />
-      <Cart/>
+      <CartDropdown/>
       {/* <Main/> */}
       <Collection/>
       {/* <SignupPage/> */}

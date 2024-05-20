@@ -1,13 +1,22 @@
 /* entire navigation bar defaults */
-.navbar{
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
+    position: fixed;
+    opacity: 0.5;
     justify-content: space-between;
     align-items:center;
-    background-color: #f1f5dd;
     width: 100%;
-}
-/* Leftside */
-/* logo */
+    transition: background-color 0.3s ease;
+  }
+  
+  .scrolled {
+    background-color: #f1f5dd; /* Change this to your desired background color */
+  }
+  
 .logo_container{
     flex-shrink: 0;
 }
@@ -21,8 +30,6 @@
     max-width: 100%;
 }
 
-/* rightside */
-/* navigating buttons */
 .rightside ul{
     list-style: none;
     display: flex;
@@ -36,12 +43,10 @@
 
 .navbar li:hover{
     cursor: pointer;
-    /* text-decoration: underline; */
 }
 
-/* cart icon */
 .Cart{
-    height: 28px;
+    height: 26px;
     width: auto;
     max-width: 100%;
 }

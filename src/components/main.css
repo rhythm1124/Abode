@@ -19,23 +19,23 @@
 }
 
 .grid-container{
-    display: flex;
     padding: 20px;
     margin: 0 auto;
     max-width: 1200px;
     text-align: center;
 }
 .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
 }
 .grid-item{
-    border: 1px solid;
+    background-color: #f1f4dd;
     border-radius: 5px;
-    padding: 10px;
     text-align: center;
+    min-width: 200px;
+    flex-shrink: 0;
 }
 .grid-img{
     max-width: 100%;
@@ -47,7 +47,4 @@
 }
 .grid-item p{
     font-weight: bold;
-}
-.grid-img:hover{
-    transform: scale(1.1);
 }

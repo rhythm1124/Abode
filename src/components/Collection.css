@@ -36,39 +36,4 @@
     text-align: center;
     min-width: 200px;
 }
-
-  .grid-item {
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    padding: 16px;
-    text-align: center;
-  }
-  
-  .collection-item img {
-    /* object-fit: cover; */
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  .grid-item h3 {
-    margin: 12px 0;
-  }
-  
-  .grid-item p {
-    margin: 8px 0;
-  }
-  
-  .grid-item button {
-    background-color: #bcc681;
-    border: none;
-    border-radius: 4px;
-    padding: 8px 12px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .grid-item button:hover {
-    background-color: #a4ae5c;
-  }
-  
+ 

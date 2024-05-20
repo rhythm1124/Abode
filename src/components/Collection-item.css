@@ -2,12 +2,16 @@
     display: grid;
     gap: 16px;
     padding: 16px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 16px;
+    text-align: center;
 }
 
 .grid-item img{
     object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 380px;
     border-radius: 5px;
 }
 
@@ -17,4 +21,15 @@
   border-radius: 5px;
   padding: 8px 12px;
   cursor: pointer;
+}
+.grid-item button:hover {
+  background-color: #a4ae5c;
+}
+
+.grid-item h3 {
+  margin: 12px 0;
+}
+
+.grid-item p {
+  margin: 8px 0;
 }

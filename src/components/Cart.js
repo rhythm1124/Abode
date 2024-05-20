@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Cart.css';
 
-const CartDropdown = ({ cartItems, onIncrement, onDecrement, onDelete, onCheckout }) => {
+const Cart = ({ cartItems, onIncrement, onDecrement, onDelete, onCheckout }) => {
   return (
     <div className="cart-dropdown">
       <h2>Shopping Cart</h2>
@@ -33,4 +33,4 @@ const CartDropdown = ({ cartItems, onIncrement, onDecrement, onDelete, onCheckou
   );
 };
 
-export default CartDropdown;
+export default Cart;

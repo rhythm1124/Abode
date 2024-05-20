@@ -8,6 +8,9 @@
     background-position: center;
 }
 
+.content-container {
+    margin-bottom: 32px;
+}
 .content-container h1{
     font-size: 3rem;
     margin: 2 rem;
@@ -21,6 +24,7 @@
     padding: 20px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
 }
 
@@ -32,38 +36,19 @@
     text-align: center;
     min-width: 200px;
 }
-/* Collection.css */
 
-.collection-container {
-    padding: 16px;
-  }
-  
-  .content-container {
-    margin-bottom: 32px;
-  }
-  
-  .collection-grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  
-  .collection-item {
-    flex: 1 1 300px; /* Adjust the width as needed */
-  }
-  
   .grid-item {
     background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 16px;
     text-align: center;
   }
   
-  .grid-item img {
+  .collection-item img {
+    /* object-fit: cover; */
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 5px;
   }
   
   .grid-item h3 {
@@ -75,8 +60,7 @@
   }
   
   .grid-item button {
-    background-color: #007BFF;
-    color: white;
+    background-color: #bcc681;
     border: none;
     border-radius: 4px;
     padding: 8px 12px;
@@ -85,6 +69,6 @@
   }
   
   .grid-item button:hover {
-    background-color: #0056b3;
+    background-color: #a4ae5c;
   }
   

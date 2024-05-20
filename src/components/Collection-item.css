@@ -1,49 +1,20 @@
-.grid-conatiner{
+.grid-item{
     display: grid;
     gap: 16px;
     padding: 16px;
 }
 
-.item-img{
+.grid-item img{
     object-fit: cover;
-    height: 420px;
     width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
-
-/* Container for the buttons and input */
-.tags {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 20px;
-    gap: 8px; /* Space between the elements */
-  }
-  
-  /* Buttons */
-  .tags button {
-    background-color: #bcc681;
-    border: none; /* Remove default border */
-    border-radius: 4px; /* Rounded corners */
-    padding: 8px 12px; /* Padding for the button */
-    cursor: pointer; /* Pointer cursor on hover */
-  }
-  
-  /* Input */
-  .tags input {
-    width: 40px; /* Fixed width for the input */
-    text-align: center; /* Center align the text */
-    border: none;
-    background-color: #d6ddac;
-    border-radius: 4px; /* Rounded corners */
-    padding: 8px; /* Padding inside the input */
-  }
-
-  /* Delete button */
-  .tags .del {
-    border: none; /* Remove default border */
-    border-radius: 4px; /* Rounded corners */
-    padding: 8px 12px; /* Padding for the button */
-    cursor: pointer; /* Pointer cursor on hover */
-  }
-  
+.grid-item button{
+  background-color: #bcc681;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}

@@ -36,7 +36,6 @@ const Collection = () => {
 
   const handleCheckout = () => {
     alert('Proceeding to checkout');
-    // Add checkout logic here
   };
 
   return (

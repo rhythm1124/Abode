@@ -7,7 +7,7 @@
   top: 0;
   width: 300px;
   height: 100%;
-  background-color: white;
+  background-color: #eeefe6;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
   padding: 16px;
   overflow-y: auto;
@@ -52,7 +52,7 @@
 
 /* Buttons */
 .tags button {
-  background-color: #007BFF;
+  background-color: #bcc681;
   color: white;
   border: none;
   border-radius: 4px;
@@ -63,7 +63,7 @@
 
 /* Hover effect for buttons */
 .tags button:hover {
-  background-color: #0056b3;
+  background-color: #a4ae5c;
 }
 
 /* Input */
@@ -77,7 +77,7 @@
 
 /* Delete button */
 .tags .del {
-  background-color: #dc3545;
+  background-color: #bcc681;
   border: none;
   border-radius: 4px;
   padding: 8px 12px;
@@ -87,13 +87,13 @@
 
 /* Hover effect for delete button */
 .tags .del:hover {
-  background-color: #c82333;
+  background-color: #a4ae5c;
 }
 
 /* Checkout button */
 .checkout-button {
   width: 100%;
-  background-color: #28a745;
+  background-color: #757f24;
   color: white;
   border: none;
   border-radius: 4px;
@@ -105,5 +105,5 @@
 
 /* Hover effect for checkout button */
 .checkout-button:hover {
-  background-color: #218838;
+  background-color: #757f24;
 }

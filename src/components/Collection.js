@@ -17,8 +17,8 @@ const Collection = () => {
                     return(
                         <CltItem
                             key={item} 
-                            img={item.image} 
-                            img_title={item.name} 
+                            img={item.img} 
+                            img_title={item.img_title} 
                             price={item.price}
                         />
                     );

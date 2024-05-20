@@ -12,6 +12,9 @@ function Main () {
                         <p>and the journey begins</p>
                     </div>
             </div>
+            <br/>
+            <br/>
+            <br/>
 
             <div className="grid-containter">
                 <div className="container">
@@ -20,20 +23,27 @@ function Main () {
                         <h2>chair</h2>
                         <p>200</p>
                     </div>
-                </div>
-                <div className="container">
                     <div className="grid-item">
                         <img src={lamp} alt="chairs" className="grid-img" />
                         <h2>chair</h2>
                         <p>200</p>
                     </div>
-                </div>
-                <div className="container">
                     <div className="grid-item">
                         <img src={lamp} alt="chairs" className="grid-img" />
                         <h2>chair</h2>
                         <p>200</p>
                     </div>
+                    <div className="grid-item">
+                        <img src={lamp} alt="chairs" className="grid-img" />
+                        <h2>chair</h2>
+                        <p>200</p>
+                    </div>
+                    <div className="grid-item">
+                        <img src={lamp} alt="chairs" className="grid-img" />
+                        <h2>chair</h2>
+                        <p>200</p>
+                    </div>
+                    
                 </div>
             </div>
 

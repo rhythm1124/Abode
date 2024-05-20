@@ -13,6 +13,17 @@ function Main() {
         </div>
       </div>
 
+      <div className="main_container">
+        <div className="content">
+          <h1>Discover Your Perfect Furniture</h1>
+          <p>And the journey begins...</p>
+        </div>
+      </div>
+
+      <div className="parallax"></div>
+      
+      <h2>Collection Items</h2>
+
       <div className="grid-container">
         <div className="container">
           <div className="grid-item">
@@ -30,8 +41,25 @@ function Main() {
             <h2>Sofa</h2>
             <p>$500</p>
           </div>
+          <div className="grid-item">
+            <img src={lamp} alt="chairs" className="grid-img" />
+            <h2>Chair</h2>
+            <p>$200</p>
+          </div>
+          <div className="grid-item">
+            <img src={lamp} alt="tables" className="grid-img" />
+            <h2>Table</h2>
+            <p>$300</p>
+          </div>
+          <div className="grid-item">
+            <img src={lamp} alt="sofas" className="grid-img" />
+            <h2>Sofa</h2>
+            <p>$500</p>
+          </div>
         </div>
       </div>
+
+      <div className="parallax"></div>
 
       <footer>
         <div className="footer-container">

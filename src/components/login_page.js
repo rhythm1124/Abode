@@ -5,7 +5,6 @@ import backgroundImage from './bg image3.jpg';
 // import {useNavigate} 'react-router-dom';
 // const provider = new GoogleAuthProvider();
 
-
 const login_page=()=>{
     // const [username, setUserName] = useState("");
     // const [password, setPassword] = useState("");
@@ -113,4 +112,3 @@ const login_page=()=>{
 };
 
 export default login_page;
-

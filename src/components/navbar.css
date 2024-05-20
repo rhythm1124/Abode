@@ -1,0 +1,47 @@
+/* entire navigation bar defaults */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #f1f5dd;
+    width: 100%;
+}
+/* Leftside */
+/* logo */
+.logo_container{
+    flex-shrink: 0;
+}
+.logo_container:hover{
+    cursor: pointer
+}
+
+.logo{
+    height: 90px;
+    width: auto;
+    max-width: 100%;
+}
+
+/* rightside */
+/* navigating buttons */
+.rightside ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li{
+    margin: 0 1rem;
+}
+
+.navbar li:hover{
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
+
+/* cart icon */
+.Cart{
+    height: 28px;
+    width: auto;
+    max-width: 100%;
+}

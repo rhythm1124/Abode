@@ -5,7 +5,6 @@ import backgroundImage from './bg image1.jpg';
 // import {useNavigate} 'react-router-dom';
 // const provider = new GoogleAuthProvider();
 
-
 const login_page=()=>{
     // const [username, setUserName] = useState("");
     // const [password, setPassword] = useState("");
@@ -106,9 +105,10 @@ const login_page=()=>{
                 {/* onClick={handleSignUpClick} */}
             </div>
         </form>
-    </div>
+
+      </div>
+
     );
 };
 
 export default login_page;
-

@@ -1,0 +1,47 @@
+.collection-conatianer{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+
+.content-container h1{
+    font-size: 3rem;
+    margin: 2 rem;
+}
+.content-container p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.collection-grid-container{
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.collection-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.collection-item-img{
+    width: 100%;
+    height: 320px;
+}
+.collection-item h2{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.collection-item p{
+    font-weight: bold;
+}

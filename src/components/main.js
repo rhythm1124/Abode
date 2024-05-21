@@ -50,23 +50,24 @@ function Main() {
       <div className="parallax"></div>
       <div className="main_container">
         <div className="content">
-          <h1>Discover Your Perfect Furniture</h1>
-          <p>And the journey begins...</p>
+          <h1>House to Home</h1>
+          <p>Our journey began with a simple mission: to craft beautiful, high-quality furniture that blends classic craftsmanship with modern design. With years of experience and a passion for perfection, we have become a trusted name in the world of home furnishings.</p>
+          <p>From our skilled artisans to our dedicated customer service team, we strive to deliver an unparalleled shopping experience, from the moment you browse our collections to the final placement of your furniture.</p>
         </div>
       </div>
 
       <div className="bg-img">
       <div className="info">
         <p>
-            this is some random text to just testthis is some random text to just testthis is some random text to just testthis is some random text to just testthis is some random text to just testthis is some random text to just testthis is some random text to just testthis is some random text to just testthis is some random text to just testthis is some random text to just testthis is some random text to just testthis is some random text to just test
+        Discover a curated selection of furniture that embodies both beauty and practicality. Our range includes:
+        Elegant sofas, cozy armchairs, and versatile coffee tables designed to be the centerpiece of your home and perfect for hosting and everyday use.
         </p>
         </div>
       </div>
       
       <div className="about">
-        <p>About content About contentAbout contentAbout contentAbout contentAbout content About content About content About content</p>
-        <p>About content About contentAbout contentAbout contentAbout contentAbout content About content About content About content</p>
-      </div>
+        <p>Each piece in our collection is meticulously crafted using the finest materials, ensuring durability and timeless appeal. Whether you are looking to furnish a new home or simply update a room, our products are designed to meet your highest expectations and transform your space into a reflection of your personal style.</p>
+        </div>
 
       <div className="grid-container">
         <div className="container">
@@ -88,13 +89,13 @@ function Main() {
       <div className="parallax3"></div>
 
       <div className="about">
-        <p>About content About contentAbout contentAbout contentAbout contentAbout content About content About content About content</p>
+        <p>Explore our collections today and let us help you create a home that tells your story.</p>
       </div>
 
       <footer>
         <div className="links">
           <ul>
-            <li>Collection</li>
+            <li>Our Collection</li>
             <li>Contact Us</li>
             <li>Cart</li>
             <li>Logout</li>
@@ -105,7 +106,6 @@ function Main() {
           
         <div className="endings">
           <ul>
-            <li>Made from Scratch</li>
             <li>All copyrights reserved</li>
             <li>Terms and Conditions</li>
           </ul>

@@ -6,7 +6,7 @@ const CltItem = ({ img, img_title, price, addToCart }) => {
     <div className="grid-item">
       <img src={img} alt={img_title} />
       <h3>{img_title}</h3>
-      <p>${price.toFixed(2)}</p>
+      <p>₹{price.toFixed(2)}</p>
       <button onClick={addToCart}>Add to Cart</button>
     </div>
   );

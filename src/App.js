@@ -1,15 +1,28 @@
 import './App.css';
 import LoginPage from './components/login_page';
-import SignUp from './components/signup_page';
-import WelcomePage from './components/welcomepage.js';
-import Main from './components/main.js';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ContactUs from './components/ContactUs.js';
+// import SignUp from './components/signup_page';
+// import WelcomePage from './components/welcomepage.js';
+// import Main from './components/main.js';
+// import ContactUs from './components/ContactUs.js';
 import Collection from './components/Collection.js';
-import CartDropdown from './components/CartDropdown.js';
+// import CartDropdown from './components/CartDropdown.js';
 import PhoneSignup from './components/phone_signup.js';
 
-// function App() {
+function App() {
+  return (
+    <div>
+      {/* <LoginPage/> */}
+      {/* <SignUp/> */}
+      {/* <WelcomePage/> */}
+      {/* <CartDropdown/> */}
+      {/* <Main/> */}
+      <Collection/>
+      {/* <ContactUs/> */}
+      <PhoneSignup/>
+    </div>
+  );
+}
+// const App = () => {
 //   return (
 //     <div>
 //       {/* <LoginPage/> */}

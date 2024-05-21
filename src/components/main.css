@@ -36,23 +36,25 @@
     margin-right: 60%;
 }
 .info p{
-  margin-top:40%;
+  margin-top:50%;
   font-size: 25px;
 }
 
   .content {
     padding: 50px 0;
     text-align: center;
-    background-color: #eeefee;
+    background-color: #d6ddac;
   }
   
   .content h1 {
-    font-size: 3rem;
+    font-size: 38px;
     margin-bottom: 20px;
   }
   
   .content p {
-    font-size: 1.5rem;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right:10%;
     margin-bottom: 20px;
   }
   
@@ -87,25 +89,32 @@
   }
   
   .about{
-    display: block;
+    display: flex;
+    justify-content: center;
     background-color: #abb9ab;
-    padding: 10px 0;
+    padding: 8px 0;
+    opacity:0.8;
   }
   .about p{
     text-align: center;
+    margin-left: 10%;
+    margin-right:10%;
   }
 
   footer {
     display: block;
     background-color: #abb9ab;
-    padding: 10px 0;
+    padding: 8px 0;
     text-align: left;
     align-items: left;
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.4);
   }
   
   footer li{
+    display: inline-block;
     font-size: 15px;
+    margin-right: 8%;
+    margin-left: 28px;
     text-decoration: none;
     list-style-type: none;
   }
@@ -115,6 +124,6 @@
 }
 .endings li{
   display: inline-block;
-  margin-right: 15%;
+  margin-right: 35%;
   margin-left: 30px;
 }

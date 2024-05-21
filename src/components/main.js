@@ -106,7 +106,6 @@ Elegant sofas, cozy armchairs, and versatile coffee tables designed to be the ce
           
         <div className="endings">
           <ul>
-            <li>Made from Scratch</li>
             <li>All copyrights reserved</li>
             <li>Terms and Conditions</li>
           </ul>

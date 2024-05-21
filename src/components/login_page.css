@@ -127,12 +127,13 @@ body {
     margin-top: 20px;
     font-size: 17px;
     color: rgb(56, 54, 54);
-    margin-left: 100px;
+    /* margin-left: 100px; */
+    margin-left: -40px;
 } 
 a{
   display: flex;
   margin-top: -24px;
-  margin-left: 150px;
+  margin-left: 80px;
 }
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

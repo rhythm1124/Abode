@@ -1,8 +1,30 @@
 import React, { useState } from 'react';
 import './Collection.css';
+import './navbar.css';
+import Logo from '../assets/logo.png';
+import Cart from '../assets/cart.png';
 import { CollectionList } from './Collection-item-list.js';
 import CltItem from './Collection-item.js';
 import CartDropdown from './CartDropdown';
+
+function Navbar() {
+  return (
+    <nav>
+      <div className="leftside">
+        <div className="logo_container">
+          <img className="logo" src={Logo} alt="Logo"/>
+        </div>
+      </div>
+      <div className="rightside">
+        <ul>
+          <li>Our Collection</li>
+          <li>Logout</li>
+          <li><img className="Cart" src={Cart} alt="Cart"/></li>
+        </ul>
+      </div>
+    </nav>
+  );
+}
 
 const Collection = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -44,6 +66,7 @@ const Collection = () => {
 
   return (
     <div className="collection-container">
+      <Navbar/>
       <div className="content-container">
         <h1>title</h1>
         <p>summary types</p>

@@ -4,14 +4,14 @@
 
 .parallax {
     height: 100vh;
-    background-image: url('../assets/main-img2.jpeg');
+    background-image: url('../assets/bg-img2.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
   }
 .parallax3{
     height: 100vh;
-    background-image: url('../assets/sofa8.jpeg');
+    background-image: url('../assets/bg-img.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;

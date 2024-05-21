@@ -1,11 +1,15 @@
-import React from 'react';
+import {React, useState} from 'react';
 import './login_page.css';
 import backgroundImage from './bg image3.jpg';
 import { auth } from '../firebase'
 import {useNavigate} from 'react-router-dom';
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+
+
 const provider = new GoogleAuthProvider();
 
-const login_page=()=>{
+const Login_page=()=>{
     const [username, setUserName] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
@@ -18,7 +22,7 @@ const login_page=()=>{
                 const credential = GoogleAuthProvider.credentialFromResult(result);
                 const token = credential.accessToken;
                 // The signed-in user info.
-                navigate('/welcomepg')
+                navigate('/Main')
                 const user = result.user;
                 console.log(user)
                 console.log("Success")
@@ -65,7 +69,7 @@ const login_page=()=>{
         .then((userCredential) => {
             // Signed in
             const user = userCredential.user;
-            navigate('/welcomepg')
+            navigate('/Main')
             console.log(user);
             console.log("success")
         })
@@ -105,4 +109,4 @@ const login_page=()=>{
     );
 };
 
-export default login_page;
+export default Login_page;

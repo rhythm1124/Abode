@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useState} from 'react';
 import { useNavigate } from "react-router-dom";
 import './signup_page.css';
 import { auth } from '../firebase'

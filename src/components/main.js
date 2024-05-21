@@ -60,7 +60,7 @@ function Main() {
       <div className="info">
         <p>
         Discover a curated selection of furniture that embodies both beauty and practicality. Our range includes:
-Elegant sofas, cozy armchairs, and versatile coffee tables designed to be the centerpiece of your home and perfect for hosting and everyday use.
+        Elegant sofas, cozy armchairs, and versatile coffee tables designed to be the centerpiece of your home and perfect for hosting and everyday use.
         </p>
         </div>
       </div>

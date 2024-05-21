@@ -87,9 +87,6 @@ function Main() {
           </div>
         </div>
       </div>
-      <div>
-      <button className="more-btn">Explore</button>
-      </div>
 
       <div className="parallax3"></div>
 

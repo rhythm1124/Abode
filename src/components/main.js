@@ -55,13 +55,6 @@ function Main() {
         </div>
       </div>
 
-      <div className="main_container">
-        <div className="content">
-          <h1>Discover Your Perfect Furniture</h1>
-          <p>And the journey begins...</p>
-        </div>
-      </div>
-
       <div className="bg-img">
       <div className="info">
         <p>

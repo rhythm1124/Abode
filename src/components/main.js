@@ -96,11 +96,11 @@ function Main() {
         <div className="links">
           <ul>
             <li>Our Collection</li>
+            <li>Login</li>
+            <li>SignUp</li>
             <li>Contact Us</li>
             <li>Cart</li>
             <li>Logout</li>
-            <li>SignUp</li>
-            <li>Socials</li>
           </ul>
         <div/>
           

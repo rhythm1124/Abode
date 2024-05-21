@@ -6,8 +6,22 @@ import Cart from '../assets/cart.png';
 import { CollectionList } from './Collection-item-list.js';
 import CltItem from './Collection-item.js';
 import CartDropdown from './CartDropdown';
+import { auth } from '../firebase'
+import { signOut } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
+
 
 function Navbar() {
+  const navigate = useNavigate();
+  const logOut = () => {
+    signOut(auth).then(() => {
+      navigate('/login');
+    }).catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage)
+    });
+  }
   return (
     <nav>
       <div className="leftside">
@@ -18,7 +32,7 @@ function Navbar() {
       <div className="rightside">
         <ul>
           <li>Our Collection</li>
-          <li>Logout</li>
+          <li onClick={logOut}>Logout</li>
           <li><img className="Cart" src={Cart} alt="Cart"/></li>
         </ul>
       </div>
@@ -82,16 +96,18 @@ const Collection = () => {
           })}
         </div>
       </div>
-      <CartDropdown
+      {/* <CartDropdown
         cartItems={cartItems}
         onIncrement={handleIncrement}
         onDecrement={handleDecrement}
         onDelete={handleDelete}
         onCheckout={handleCheckout}
         onClearCart={handleClearCart} // Pass the handleClearCart function
-      />
+      /> */}
     </div>
   );
 };
+
+const showCart = () => {}
 
 export default Collection;

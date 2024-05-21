@@ -6,6 +6,10 @@ import './main.css';
 import Logo from '../assets/logo.png';
 import Cart from '../assets/cart.png';
 import './navbar.css';
+import {useNavigate} from 'react-router-dom';
+import { auth } from '../firebase'
+import { signOut } from 'firebase/auth';
+
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -19,11 +23,32 @@ function Navbar() {
       }
     };
 
+    
+
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const navigate = useNavigate();
+  const openCart = () => {
+    navigate('/Cart')
+  }
+
+  const openCollection = () => {
+    navigate('/Collection')
+  }
+
+  const logOut = () => {
+    signOut(auth).then(() => {
+      navigate('/login');
+    }).catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage)
+    });
+  }
 
   return (
     <nav className={scrolled ? 'navbar scrolled' : 'navbar'}>
@@ -34,9 +59,9 @@ function Navbar() {
       </div>
       <div className="rightside">
         <ul>
-          <li>Our Collection</li>
-          <li>Logout</li>
-          <li><img className="Cart" src={Cart} alt="Cart"/></li>
+          <li onClick={openCollection}>Our Collection</li>
+          <li onClick={logOut}>Logout</li>
+          <li><img className="Cart" src={Cart} alt="Cart" onClick={openCart}/></li>
         </ul>
       </div>
     </nav>
@@ -44,6 +69,22 @@ function Navbar() {
 }
 
 function Main() {
+  const navigate = useNavigate();
+  const logOut = () => {
+    signOut(auth).then(() => {
+      navigate('/login');
+    }).catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage)
+    });
+  }
+  
+
+  const contact = () => {
+    navigate('/ContactUs')
+  }
+
   return (
     <div className="main">
       <Navbar />
@@ -57,7 +98,7 @@ function Main() {
       </div>
 
       <div className="bg-img">
-      <div className="info">
+      <div className="info_main">
         <p>
         Discover a curated selection of furniture that embodies both beauty and practicality. Our range includes:
         Elegant sofas, cozy armchairs, and versatile coffee tables designed to be the centerpiece of your home and perfect for hosting and everyday use.
@@ -96,11 +137,11 @@ function Main() {
         <div className="links">
           <ul>
             <li>Our Collection</li>
-            <li>Login</li>
-            <li>SignUp</li>
             <li>Contact Us</li>
             <li>Cart</li>
             <li>Logout</li>
+            <li>SignUp</li>
+            <li>Socials</li>
           </ul>
         <div/>
           

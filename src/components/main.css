@@ -82,18 +82,23 @@
   }
   
   footer {
+    display: flex;
     background-color: #abb9ab;
     padding: 20px 0;
-    text-align: center;
+    text-align: left;
+    align-items: left;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.4);
   }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .footer-links a {
+
+  footer li{
     text-decoration: none;
-    margin-right: 20px;
+    list-style-type: none;
   }
+
+  /* .links{
+    border-bottom: 1px solid #000;
+  } */
+
+.endings{
+  border-top: 1px solid #333;
+}

@@ -90,8 +90,11 @@ function Main() {
 
       <div className="parallax3"></div>
 
+      
+
       <footer>
-        <div className="footer-container">
+
+        <div className="links">
           <ul>
             <li>Collection</li>
             <li>Contact Us</li>
@@ -102,6 +105,17 @@ function Main() {
             <li>Collection</li>
             <li>Collection</li>
           </ul>
+        <div/>
+          
+        <div className="endings">
+          <ul>
+            <li>Made from Scratch</li>
+            <li>All copyrights reserved</li>
+            <li>Terms and Conditions</li>
+          </ul>
+        </div>
+
+      
         </div>
       </footer>
     </div>

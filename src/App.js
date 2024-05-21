@@ -3,7 +3,7 @@ import './App.css';
 // import SignupPage from './components/signup_page';
 // import WelcomePage from './components/welcomepage';
 import Main from './components/main.js';
-import Navbar from './components/navbar.js';
+// import Navbar from './components/navbar.js';
 import ContactUs from './components/ContactUs.js';
 // import Collection from './components/Collection.js';
 // import CartDropdown from './components/CartDropdown.js';

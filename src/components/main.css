@@ -43,7 +43,7 @@
   .content {
     padding: 50px 0;
     text-align: center;
-    background-color: #eeefee;
+    background-color: #d6ddac;
   }
   
   .content h1 {
@@ -113,7 +113,7 @@
   footer li{
     display: inline-block;
     font-size: 15px;
-    margin-right: 10%;
+    margin-right: 8%;
     margin-left: 28px;
     text-decoration: none;
     list-style-type: none;

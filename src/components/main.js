@@ -95,7 +95,7 @@ Elegant sofas, cozy armchairs, and versatile coffee tables designed to be the ce
       <footer>
         <div className="links">
           <ul>
-            <li>Collection</li>
+            <li>Our Collection</li>
             <li>Contact Us</li>
             <li>Cart</li>
             <li>Logout</li>

@@ -6,7 +6,7 @@ import './App.css';
 // import ContactUs from './components/ContactUs.js';
 import Collection from './components/Collection.js';
 // import CartDropdown from './components/CartDropdown.js';
-// import PhoneSignup from './components/phone_signup.js';
+import PhoneSignup from './components/phone_signup.js';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
       {/* <Main/> */}
       <Collection/>
       {/* <ContactUs/> */}
-      {/* <PhoneSignup/> */}
+      <PhoneSignup/>
     </div>
   );
 }

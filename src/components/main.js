@@ -76,32 +76,26 @@ function Main() {
           <div className="grid-item">
             <img src={lamp} alt="chairs" className="grid-img" />
             <h2>Chair</h2>
-            <p>$200</p>
           </div>
           <div className="grid-item">
             <img src={lamp} alt="tables" className="grid-img" />
             <h2>Table</h2>
-            <p>$300</p>
           </div>
           <div className="grid-item">
             <img src={lamp} alt="sofas" className="grid-img" />
             <h2>Sofa</h2>
-            <p>$500</p>
           </div>
           <div className="grid-item">
             <img src={lamp} alt="chairs" className="grid-img" />
             <h2>Chair</h2>
-            <p>$200</p>
           </div>
           <div className="grid-item">
             <img src={lamp} alt="tables" className="grid-img" />
             <h2>Table</h2>
-            <p>$300</p>
           </div>
           <div className="grid-item">
             <img src={lamp} alt="sofas" className="grid-img" />
             <h2>Sofa</h2>
-            <p>$500</p>
           </div>
         </div>
       </div>

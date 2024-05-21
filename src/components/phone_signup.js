@@ -80,7 +80,7 @@ const PhoneSignup=()=>{
        
     // }
     return(
-        <div className='outer2'>
+        <div className='outer1'>
         <div className='login'>
             <h1>Login</h1>
             {/* {console.log("Buidling")} */}

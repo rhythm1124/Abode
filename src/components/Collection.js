@@ -5,7 +5,7 @@ import Logo from '../assets/logo.png';
 import Cart from '../assets/cart.png';
 import { CollectionList } from './Collection-item-list.js';
 import CltItem from './Collection-item.js';
-import CartDropdown from './CartDropdown';
+// import CartDropdown from './CartDropdown';
 
 function Navbar() {
   return (
@@ -86,14 +86,14 @@ const Collection = () => {
           })}
         </div>
       </div>
-      <CartDropdown
+      {/* <CartDropdown
         cartItems={cartItems}
         onIncrement={handleIncrement}
         onDecrement={handleDecrement}
         onDelete={handleDelete}
         onCheckout={handleCheckout}
         onClearCart={handleClearCart} // Pass the handleClearCart function
-      />
+      /> */}
     </div>
   );
 };

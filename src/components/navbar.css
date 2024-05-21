@@ -41,6 +41,9 @@
     margin: 0;
     padding: 0;
 }
+.rightside li{
+    margin: 10px;
+}
 
 .navbar li{
     margin: 0 1rem;

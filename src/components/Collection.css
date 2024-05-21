@@ -1,3 +1,25 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    
+    background-color: #f1f5dd;
+    /* box-shadow: 0 2px 2px -2px rgba(0,0,0,.2); */
+    /* justify-content: space-between; */
+    align-items:center;
+    width: 100%;
+  }
+
+  nav{
+    display: flex;
+    position:relative;
+    justify-content: space-between;
+    align-items:center;
+  }
+
 .collection-conatianer{
     display: flex;
     text-align: center;

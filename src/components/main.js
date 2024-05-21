@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import lamp from '../assets/lamp12.jpeg';
+import lamp from '../assets/lamp5.jpeg';
+import shelf from '../assets/sshelf2.jpeg';
+import sofa from '../assets/sofa2.1.jpg';
 import './main.css';
 import Logo from '../assets/logo.png';
 import Cart from '../assets/cart.png';
@@ -68,21 +70,23 @@ function Main() {
         </div>
       </div>
       
-
-      {/* <h2>Collection Items</h2> */}
+      <div className="about">
+        <p>About content About contentAbout contentAbout contentAbout contentAbout content About content About content About content</p>
+        <p>About content About contentAbout contentAbout contentAbout contentAbout content About content About content About content</p>
+      </div>
 
       <div className="grid-container">
         <div className="container">
           <div className="grid-item">
             <img src={lamp} alt="chairs" className="grid-img" />
-            <h2>Chair</h2>
+            <h2>Lamp</h2>
           </div>
           <div className="grid-item">
-            <img src={lamp} alt="tables" className="grid-img" />
-            <h2>Table</h2>
+            <img src={shelf} alt="tables" className="grid-img" />
+            <h2>Cupboard</h2>
           </div>
           <div className="grid-item">
-            <img src={lamp} alt="sofas" className="grid-img" />
+            <img src={sofa} alt="sofas" className="grid-img" />
             <h2>Sofa</h2>
           </div>
         </div>
@@ -90,10 +94,11 @@ function Main() {
 
       <div className="parallax3"></div>
 
-      
+      <div className="about">
+        <p>About content About contentAbout contentAbout contentAbout contentAbout content About content About content About content</p>
+      </div>
 
       <footer>
-
         <div className="links">
           <ul>
             <li>Collection</li>

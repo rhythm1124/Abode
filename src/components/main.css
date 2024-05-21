@@ -119,6 +119,11 @@
     list-style-type: none;
   }
 
+  .links li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
 .endings{
   border-top: 1px solid #333;
 }
@@ -126,4 +131,7 @@
   display: inline-block;
   margin-right: 35%;
   margin-left: 30px;
+}
+.endings li:hover{
+  text-decoration: none;
 }

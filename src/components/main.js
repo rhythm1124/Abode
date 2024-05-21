@@ -137,9 +137,9 @@ function Main() {
         <div className="links">
           <ul>
             <li>Our Collection</li>
-            <li onClick={contact}>Contact Us</li>
+            <li>Contact Us</li>
             <li>Cart</li>
-            <li onClick={logOut}>Logout</li>
+            <li>Logout</li>
             <li>SignUp</li>
             <li>Socials</li>
           </ul>

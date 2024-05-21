@@ -39,6 +39,7 @@ const SignUp=()=>{
     //   }
 
     return(
+        <div className='outer2'>
         <div className='signup'>
             <h1>SignUp</h1>
             <form>
@@ -61,6 +62,7 @@ const SignUp=()=>{
                     {/* onClick={signUp} */}
                     
             </form>
+        </div>
         </div>
     );
 };

@@ -102,8 +102,6 @@ function Main() {
             <li>Logout</li>
             <li>SignUp</li>
             <li>Socials</li>
-            <li>Collection</li>
-            <li>Collection</li>
           </ul>
         <div/>
           

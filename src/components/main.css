@@ -1,11 +1,39 @@
+.main{
+    background-color: none;
+}
+
 .parallax {
     height: 100vh;
-    background-image: url('../assets/main1.jpeg');
+    background-image: url('../assets/main-img2.jpeg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
   }
+.parallax3{
+    height: 100vh;
+    background-image: url('../assets/main2.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.bg-img{
+    height: 100vh;
+    background-image: url('../assets/main-img.jpeg');
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
   
+.info{
+    text-align: left;
+    background-color: none;
+    background-size: contain;
+    padding: 18px 22px;
+    margin-left: 20px;
+    margin-right: 60%;
+}
+
   .content {
     padding: 50px 0;
     text-align: center;
@@ -34,18 +62,17 @@
   }
   
   .grid-item {
-    background-color: #f1f4dd;
+    /* background-color: #f1f4dd; */
     text-align: center;
   }
   
   .grid-img {
     max-width: 100%;
-    height: 320px;
+    height: 450px;
   }
   
   footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #eeefe6;
     padding: 20px 0;
     text-align: center;
   }
@@ -57,18 +84,6 @@
   }
   
   .footer-links a {
-    color: #fff;
     text-decoration: none;
     margin-right: 20px;
   }
-  
-  .social-links a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
-  }
-  
-  .social-links i {
-    font-size: 1.5rem;
-  }
-  

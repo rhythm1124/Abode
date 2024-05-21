@@ -60,9 +60,16 @@ function Main() {
         </div>
       </div>
 
-      <div className="parallax"></div>
+      <div className="bg-img">
+      <div className="info">
+        <p>
+            this is some random text to just testthis is some random text to just testthis is some random text to just testthis is some random text to just testthis is some random text to just testthis is some random text to just testthis is some random text to just testthis is some random text to just testthis is some random text to just testthis is some random text to just testthis is some random text to just testthis is some random text to just test
+        </p>
+        </div>
+      </div>
+      
 
-      <h2>Collection Items</h2>
+      {/* <h2>Collection Items</h2> */}
 
       <div className="grid-container">
         <div className="container">
@@ -99,22 +106,20 @@ function Main() {
         </div>
       </div>
 
-      <div className="parallax"></div>
+      <div className="parallax3"></div>
 
       <footer>
         <div className="footer-container">
-          <div className="footer-links">
-            <a href="#contact">Contact Us</a>
-            <a href="#login">Login</a>
-            <a href="#signup">Sign Up</a>
-            <a href="#home">Home</a>
-            <a href="#collection">Collection</a>
-          </div>
-          <div className="social-links">
-            <a href="#facebook"><i className="fab fa-facebook"></i></a>
-            <a href="#twitter"><i className="fab fa-twitter"></i></a>
-            <a href="#instagram"><i className="fab fa-instagram"></i></a>
-          </div>
+          <ul>
+            <li>Collection</li>
+            <li>Contact Us</li>
+            <li>Cart</li>
+            <li>Logout</li>
+            <li>SignUp</li>
+            <li>Socials</li>
+            <li>Collection</li>
+            <li>Collection</li>
+          </ul>
         </div>
       </footer>
     </div>

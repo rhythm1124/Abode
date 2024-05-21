@@ -80,6 +80,7 @@ const PhoneSignup=()=>{
        
     // }
     return(
+        <div className='outer2'>
         <div className='login'>
             <h1>Login</h1>
             {/* {console.log("Buidling")} */}
@@ -101,6 +102,7 @@ const PhoneSignup=()=>{
                     {/* onClick={handleSignUpClick} */}
                 </div>
             </form>
+        </div>
         </div>
     );
 };

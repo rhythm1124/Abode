@@ -67,10 +67,10 @@ const Collection = () => {
   return (
     <div className="collection-container">
       <Navbar/>
-      <div className="content-container">
+      {/* <div className="content-container">
         <h1>title</h1>
         <p>summary types</p>
-      </div>
+      </div> */}
       <div className="collection-grid-container">
         <div className="collection-item">
           {CollectionList.map((item, key) => {

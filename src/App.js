@@ -1,12 +1,7 @@
 import './App.css';
-import LoginPage from './components/login_page';
-// import SignupPage from './components/signup_page';
-import WelcomePage from './components/welcomepage';
-import Main from './components/main.js';
-import ContactUs from './components/ContactUs.js';
 // import LoginPage from './components/login_page';
 // import SignUp from './components/signup_page';
-import WelcomePage from './components/welcomepage.js';
+// import WelcomePage from './components/welcomepage.js';
 // import Main from './components/main.js';
 // import ContactUs from './components/ContactUs.js';
 // import Collection from './components/Collection.js';

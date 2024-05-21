@@ -85,19 +85,10 @@ function Main() {
             <img src={lamp} alt="sofas" className="grid-img" />
             <h2>Sofa</h2>
           </div>
-          <div className="grid-item">
-            <img src={lamp} alt="chairs" className="grid-img" />
-            <h2>Chair</h2>
-          </div>
-          <div className="grid-item">
-            <img src={lamp} alt="tables" className="grid-img" />
-            <h2>Table</h2>
-          </div>
-          <div className="grid-item">
-            <img src={lamp} alt="sofas" className="grid-img" />
-            <h2>Sofa</h2>
-          </div>
         </div>
+      </div>
+      <div>
+      <button className="more-btn">Explore</button>
       </div>
 
       <div className="parallax3"></div>

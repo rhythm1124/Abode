@@ -8,7 +8,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     justify-content: center;
     align-items: center;
-    display: flex;
+    /* display: flex; */
     min-height: 100vh;
     /* background: url('bg\ image3.jpg')
     no-repeat;
@@ -20,6 +20,9 @@ body {
     no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
 }
   .signup{
     width: 450px;
@@ -31,6 +34,8 @@ body {
     border-radius: 20px;
     padding:40px 20px;
     margin-top: 40px;
+    justify-self: center;
+    align-self: center;
   }
   .signup h1{
     font-size: 36px;

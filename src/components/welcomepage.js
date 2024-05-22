@@ -16,7 +16,7 @@ const WelcomePage=()=>{
       <div className='web'>
         <h1>Welcome to Our Website</h1>
         <p>
-        Welcome to Abode, where your dream home comes to life. Dive into our thoughtfully curated collection of stylish and high-quality furnishings, and let us help you transform every room into a haven of comfort, beauty, and personal expression. Discover the perfect pieces that resonate with your unique style and create a home you love.
+        Welcome to "Abode", where your dream home comes to life. Dive into our thoughtfully curated collection of stylish and high-quality furnishings, and let us help you transform every room into a haven of comfort, beauty, and personal expression. Discover the perfect pieces that resonate with your unique style and create a home you love.
         </p>
         <button className='bttn' onClick={handleLoginCLick}>Login</button>
       </div>

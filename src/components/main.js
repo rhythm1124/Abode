@@ -5,14 +5,15 @@ import sofa from '../assets/sofa2.1.jpg';
 import './main.css';
 import Logo from '../assets/logo.png';
 import Cart from '../assets/cart.png';
+import CartDropdown from './CartDropdown';
 import './navbar.css';
-import {useNavigate} from 'react-router-dom';
-import { auth } from '../firebase'
+import { useNavigate } from 'react-router-dom';
+import { auth } from '../firebase';
 import { signOut } from 'firebase/auth';
 
-
-function Navbar() {
+function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, handleCheckout, handleClearCart }) {
   const [scrolled, setScrolled] = useState(false);
+  const [showCart, setShowCart] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,8 +24,6 @@ function Navbar() {
       }
     };
 
-    
-
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -32,36 +31,53 @@ function Navbar() {
   }, []);
 
   const navigate = useNavigate();
-  const openCart = () => {
-    navigate('/Cart')
-  }
+
+  const toggleCartDropdown = () => {
+    setShowCart(!showCart);
+  };
+
+  const goToMainPage = () => {
+    navigate('/Main');
+  };
 
   const openCollection = () => {
-    navigate('/Collection')
-  }
+    navigate('/Collection');
+  };
 
   const logOut = () => {
     signOut(auth).then(() => {
       navigate('/login');
     }).catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorCode, errorMessage)
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode, errorMessage);
     });
-  }
+  };
 
   return (
     <nav className={scrolled ? 'navbar scrolled' : 'navbar'}>
       <div className="leftside">
-        <div className="logo_container">
-          <img className="logo" src={Logo} alt="Logo"/>
+        <div className="logo_container" onClick={goToMainPage}>
+          <img className="logo" src={Logo} alt="Logo" />
         </div>
       </div>
       <div className="rightside">
         <ul>
           <li onClick={openCollection}>Our Collection</li>
           <li onClick={logOut}>Logout</li>
-          <li><img className="Cart" src={Cart} alt="Cart" onClick={openCart}/></li>
+          <li>
+            <img className="Cart" src={Cart} alt="Cart" onClick={toggleCartDropdown} />
+            {showCart && (
+              <CartDropdown
+                cartItems={cartItems}
+                onIncrement={handleIncrement}
+                onDecrement={handleDecrement}
+                onDelete={handleDelete}
+                onCheckout={handleCheckout}
+                onClearCart={handleClearCart}
+              />
+            )}
+          </li>
         </ul>
       </div>
     </nav>
@@ -70,36 +86,68 @@ function Navbar() {
 
 function Main() {
   const navigate = useNavigate();
+  const [cartItems, setCartItems] = useState([]);
+
+  const handleIncrement = (id) => {
+    setCartItems(cartItems.map(cartItem =>
+      cartItem.id === id ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem
+    ));
+  };
+
+  const handleDecrement = (id) => {
+    setCartItems(cartItems.map(cartItem =>
+      cartItem.id === id && cartItem.quantity > 1 ? { ...cartItem, quantity: cartItem.quantity - 1 } : cartItem
+    ));
+  };
+
+  const handleDelete = (id) => {
+    setCartItems(cartItems.filter(cartItem => cartItem.id !== id));
+  };
+
+  const handleCheckout = () => {
+    alert('Proceeding to checkout');
+  };
+
+  const handleClearCart = () => {
+    setCartItems([]); // Clear the cart by setting cartItems to an empty array
+  };
+
+  const contact = () => {
+    navigate('/ContactUs');
+  };
+
+  const cart = () => {
+    navigate('/Cart');
+  };
+
+  const signUp = () => {
+    navigate('/SignUp');
+  };
+
+  const collection = () => {
+    navigate('/Collection');
+  };
+
   const logOut = () => {
     signOut(auth).then(() => {
       navigate('/login');
     }).catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorCode, errorMessage)
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode, errorMessage);
     });
-  }
-  
-
-  const contact = () => {
-    navigate('/ContactUs')
-  }
-
-  const cart = () => {
-    navigate('/Cart')
-  }
-
-  const signUp = () => {
-    navigate('/SignUp')
-  }
-
-  const collection = () => {
-    navigate('/Collection')
-  }
+  };
 
   return (
     <div className="main">
-      <Navbar />
+      <Navbar
+        cartItems={cartItems}
+        handleIncrement={handleIncrement}
+        handleDecrement={handleDecrement}
+        handleDelete={handleDelete}
+        handleCheckout={handleCheckout}
+        handleClearCart={handleClearCart}
+      />
       <div className="parallax"></div>
       <div className="main_container">
         <div className="content">
@@ -110,17 +158,17 @@ function Main() {
       </div>
 
       <div className="bg-img">
-      <div className="info_main">
-        <p>
-        Discover a curated selection of furniture that embodies both beauty and practicality. Our range includes:
-        Elegant sofas, cozy armchairs, and versatile coffee tables designed to be the centerpiece of your home and perfect for hosting and everyday use.
-        </p>
+        <div className="info_main">
+          <p>
+            Discover a curated selection of furniture that embodies both beauty and practicality. Our range includes:
+            Elegant sofas, cozy armchairs, and versatile coffee tables designed to be the centerpiece of your home and perfect for hosting and everyday use.
+          </p>
         </div>
       </div>
-      
+
       <div className="about">
         <p>Each piece in our collection is meticulously crafted using the finest materials, ensuring durability and timeless appeal. Whether you are looking to furnish a new home or simply update a room, our products are designed to meet your highest expectations and transform your space into a reflection of your personal style.</p>
-        </div>
+      </div>
 
       <div className="grid-container">
         <div className="container">
@@ -155,16 +203,13 @@ function Main() {
             <li onClick={signUp}>SignUp</li>
             {/* <li>Socials</li> */}
           </ul>
-        <div/>
-          
+        </div>
+
         <div className="endings">
           <ul>
             <li>All copyrights reserved</li>
             <li>Terms and Conditions</li>
           </ul>
-        </div>
-
-      
         </div>
       </footer>
     </div>

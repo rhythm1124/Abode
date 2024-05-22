@@ -29,7 +29,7 @@ import PhoneSignup from './components/phone_signup.js';
 //       {/* <LoginPage/> */}
 //       {/* <SignUp/> */}
 //       {/* <WelcomePage/> */}
-//       {/* <CartDropdown/> */}
+      // {/* <CartDropdown/> */}
 //       {/* <Main/> */}
 //       <Collection/>
 //       {/* <ContactUs/> */}
@@ -41,13 +41,14 @@ const App = () => {
   return (
     <Router>
       <Routes>
+        
         <Route path="/" element={<WelcomePage/>} />
         <Route path="/login" element={<LoginPage/>}/>
         <Route path="/SignUp" element={<SignUp/>}/>
         <Route path="/PhoneSignup" element={<PhoneSignup/>}/>
         <Route path="/Main" element={<Main/>}/>
         <Route path="/Collection" element={<Collection/>}/>
-        <Route path="/Cart" element={<CartDropdown/>}/>
+        {/* <Route path="/Cart" element={<CartDropdown/>}/> */}
         <Route path="/ContactUs" element={<ContactUs/>}/>
       </Routes>
     </Router>

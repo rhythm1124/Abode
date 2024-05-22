@@ -121,6 +121,7 @@ const PhoneSignup=()=>{
                 </div>
                     <input type='text' placeholder='Phone Number*' onChange={handleUsernameChange} required/>
                 </div>
+                <br/><br/>
                     <center><button className='submit' onClick={sendSMS}>Login</button></center>
                 <div className='register-link'>
                     <p>Don't have an account?  <a href='#'onClick={handleSignUpClick}>SignUp</a></p>

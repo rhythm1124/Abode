@@ -31,11 +31,12 @@
     text-align: left;
     background-color: none;
     background-size: contain;
-    padding: 18px 22px;
-    margin-right: 50%;
+    padding: 5px;
+    margin-right: 55%;
 }
-.bg-img p{
+.info_main p{
   margin-top:30%;
+  margin-left: 15%;
   font-size: 25px;
 }
 
@@ -91,7 +92,7 @@
     display: flex;
     justify-content: center;
     background-color: #abb9ab;
-    padding: 25px 0;
+    padding: 35px;
     opacity:0.8;
   }
   .about p{

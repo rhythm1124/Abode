@@ -16,6 +16,13 @@
   margin-bottom: 16px;
 }
 
+.cart-dropdown p{
+  margin-left: -45%;
+  margin-right: 0;
+  display: flex;
+  text-align: left;
+}
+
 .cart-item {
   display: flex;
   flex-direction: column; /* Arrange elements vertically */

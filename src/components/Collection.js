@@ -173,8 +173,6 @@ const Collection = () => {
             <li onClick={contact}>Contact Us</li>
             <li onClick={cart}>Cart</li>
             <li onClick={logOut}>Logout</li>
-            <li onClick={signUp}>SignUp</li>
-            <li>Socials</li>
           </ul>
         </div>
 

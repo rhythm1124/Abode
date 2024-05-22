@@ -19,7 +19,7 @@ import PhoneSignup from './components/phone_signup.js';
 //       {/* <Main/> */}
 //       <Collection/>
 //       {/* <ContactUs/> */}
-//       <PhoneSignup/>
+      // <PhoneSignup/>
 //     </div>
 //   );
 // }

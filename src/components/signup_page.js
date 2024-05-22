@@ -38,12 +38,7 @@ const SignUp=()=>{
               // ..
           });
       }
-      const login = () => {
-        const navigate = useNavigate();
-        const navigateToLogin = () => {
-            navigate('/login_page'); // Ensure the path matches the Route path
-          };
-        }
+      
     return(
         <div className='outer2'>
         <div className='signup'>
@@ -60,7 +55,7 @@ const SignUp=()=>{
                 <div className='input-boxb'>
                     <input type='password' placeholder='Password*' onChange={(e)=>setPassword(e.target.value)} required/>
                 </div>
-                    <center><button className='submit1'onClick={navigateToLogin()}>SignUp</button></center>
+                    <center><button className='submit1'onClick={signUp}>SignUp</button></center>
                     
             </form>
         </div>

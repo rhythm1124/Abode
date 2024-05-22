@@ -4,7 +4,7 @@ import backgroundImage from './bg image3.jpg';
 import { auth } from '../firebase'
 import {useNavigate} from 'react-router-dom';
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 
 const provider = new GoogleAuthProvider();
@@ -60,7 +60,7 @@ const Login_page=()=>{
         
     };
     const phoneClick = () => {
-        navigate('/phone_sign_in');
+        navigate('/PhoneSignup');
     }
     const onLogin = (e) => {
         console.log("Signing in: " + username + ", " + password);

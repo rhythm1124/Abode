@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Collection.css';
 import './navbar.css';
 import Logo from '../assets/logo.png';
@@ -11,18 +11,25 @@ import { signOut } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 
 function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, handleCheckout, handleClearCart }) {
-  const navigate = useNavigate();
+  const [scrolled, setScrolled] = useState(false);
   const [showCart, setShowCart] = useState(false);
 
-  const logOut = () => {
-    signOut(auth).then(() => {
-      navigate('/login');
-    }).catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log(errorCode, errorMessage);
-    });
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const navigate = useNavigate();
 
   const toggleCartDropdown = () => {
     setShowCart(!showCart);
@@ -36,20 +43,18 @@ function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, han
     navigate('/Collection');
   };
 
-  const contact = () => {
-    navigate('/ContactUs');
-  };
-
-  const cart = () => {
-    navigate('/Cart');
-  };
-
-  const signUp = () => {
-    navigate('/SignUp');
+  const logOut = () => {
+    signOut(auth).then(() => {
+      navigate('/login');
+    }).catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode, errorMessage);
+    });
   };
 
   return (
-    <nav>
+    <nav className={scrolled ? 'navbar scrolled' : 'navbar'}>
       <div className="leftside">
         <div className="logo_container" onClick={goToMainPage}>
           <img className="logo" src={Logo} alt="Logo" />
@@ -154,6 +159,7 @@ const Collection = () => {
         handleClearCart={handleClearCart}
       />
       <div className="collection-grid-container">
+        <br/><br/><br/><br/>
         <div className="collection-item">
           {CollectionList.map((item, key) => (
             <CltItem

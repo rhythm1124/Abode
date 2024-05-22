@@ -57,7 +57,6 @@ body {
   }
   .input-box1{
     padding-left: 20px;
-    /* margin-top: 20px; */
   }
   .input-box1 input{
     width: 86%;
@@ -114,7 +113,7 @@ body {
 }
 .submit{
     width: 250px;
-    /* margin-bottom: 50px; */
+    margin-bottom: 20px;
     height: 45px;
     background-color: #D6DDAC;
     border: 2px solid rgb(192, 186, 186, .5);

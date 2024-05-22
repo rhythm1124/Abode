@@ -128,6 +128,16 @@ function Main() {
     navigate('/Collection');
   };
 
+  const logOut = () => {
+    signOut(auth).then(() => {
+      navigate('/login');
+    }).catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode, errorMessage);
+    });
+  };
+
   return (
     <div className="main">
       <Navbar
@@ -189,7 +199,7 @@ function Main() {
             <li onClick={collection}>Our Collection</li>
             <li onClick={contact}>Contact Us</li>
             <li onClick={cart}>Cart</li>
-            {/* <li onClick={logOut}>Logout</li> */}
+            <li onClick={logOut}>Logout</li>
             <li onClick={signUp}>SignUp</li>
             <li>Socials</li>
           </ul>

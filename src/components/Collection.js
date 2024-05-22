@@ -6,7 +6,7 @@ import Cart from '../assets/cart.png';
 import { CollectionList } from './Collection-item-list.js';
 import CltItem from './Collection-item.js';
 import CartDropdown from './CartDropdown';
-import { auth } from '../firebase'
+import { auth } from '../firebase';
 import { signOut } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 
@@ -20,7 +20,7 @@ function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, han
     }).catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      console.log(errorCode, errorMessage)
+      console.log(errorCode, errorMessage);
     });
   };
 
@@ -32,6 +32,22 @@ function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, han
     navigate('/Main');
   };
 
+  const openCollection = () => {
+    navigate('/Collection');
+  };
+
+  const contact = () => {
+    navigate('/ContactUs');
+  };
+
+  const cart = () => {
+    navigate('/Cart');
+  };
+
+  const signUp = () => {
+    navigate('/SignUp');
+  };
+
   return (
     <nav>
       <div className="leftside">
@@ -41,7 +57,7 @@ function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, han
       </div>
       <div className="rightside">
         <ul>
-          <li>Our Collection</li>
+          <li onClick={openCollection}>Our Collection</li>
           <li onClick={logOut}>Logout</li>
           <li>
             <img className="Cart" src={Cart} alt="Cart" onClick={toggleCartDropdown} />
@@ -64,6 +80,7 @@ function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, han
 
 const Collection = () => {
   const [cartItems, setCartItems] = useState([]);
+  const navigate = useNavigate();
 
   const addToCart = (item) => {
     const existingItem = cartItems.find(cartItem => cartItem.id === item.id);
@@ -100,6 +117,32 @@ const Collection = () => {
     setCartItems([]); // Clear the cart by setting cartItems to an empty array
   };
 
+  const collection = () => {
+    navigate('/Collection');
+  };
+
+  const contact = () => {
+    navigate('/ContactUs');
+  };
+
+  const cart = () => {
+    navigate('/Cart');
+  };
+
+  const signUp = () => {
+    navigate('/SignUp');
+  };
+
+  const logOut = () => {
+    signOut(auth).then(() => {
+      navigate('/login');
+    }).catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode, errorMessage);
+    });
+  };
+
   return (
     <div className="collection-container">
       <Navbar
@@ -123,6 +166,25 @@ const Collection = () => {
           ))}
         </div>
       </div>
+      <footer>
+        <div className="links">
+          <ul>
+            <li onClick={collection}>Our Collection</li>
+            <li onClick={contact}>Contact Us</li>
+            <li onClick={cart}>Cart</li>
+            <li onClick={logOut}>Logout</li>
+            <li onClick={signUp}>SignUp</li>
+            <li>Socials</li>
+          </ul>
+        </div>
+
+        <div className="endings">
+          <ul>
+            <li>All copyrights reserved</li>
+            <li>Terms and Conditions</li>
+          </ul>
+        </div>
+      </footer>
     </div>
   );
 };

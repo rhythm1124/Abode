@@ -10,30 +10,52 @@ import { auth } from '../firebase'
 import { signOut } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 
-
-function Navbar() {
+function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, handleCheckout, handleClearCart }) {
   const navigate = useNavigate();
+  const [showCart, setShowCart] = useState(false);
+
   const logOut = () => {
     signOut(auth).then(() => {
       navigate('/login');
     }).catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorCode, errorMessage)
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode, errorMessage)
     });
-  }
+  };
+
+  const toggleCartDropdown = () => {
+    setShowCart(!showCart);
+  };
+
+  const goToMainPage = () => {
+    navigate('/Main');
+  };
+
   return (
     <nav>
       <div className="leftside">
-        <div className="logo_container">
-          <img className="logo" src={Logo} alt="Logo"/>
+        <div className="logo_container" onClick={goToMainPage}>
+          <img className="logo" src={Logo} alt="Logo" />
         </div>
       </div>
       <div className="rightside">
         <ul>
           <li>Our Collection</li>
           <li onClick={logOut}>Logout</li>
-          <li><img className="Cart" src={Cart} alt="Cart"/></li>
+          <li>
+            <img className="Cart" src={Cart} alt="Cart" onClick={toggleCartDropdown} />
+            {showCart && (
+              <CartDropdown
+                cartItems={cartItems}
+                onIncrement={handleIncrement}
+                onDecrement={handleDecrement}
+                onDelete={handleDelete}
+                onCheckout={handleCheckout}
+                onClearCart={handleClearCart}
+              />
+            )}
+          </li>
         </ul>
       </div>
     </nav>
@@ -80,34 +102,29 @@ const Collection = () => {
 
   return (
     <div className="collection-container">
-      <Navbar/>
+      <Navbar
+        cartItems={cartItems}
+        handleIncrement={handleIncrement}
+        handleDecrement={handleDecrement}
+        handleDelete={handleDelete}
+        handleCheckout={handleCheckout}
+        handleClearCart={handleClearCart}
+      />
       <div className="collection-grid-container">
         <div className="collection-item">
-          {CollectionList.map((item, key) => {
-            return (
-              <CltItem
-                key={item.id}
-                img={item.img}
-                img_title={item.img_title}
-                price={item.price}
-                addToCart={() => addToCart(item)} // Pass the addToCart function
-              />
-            );
-          })}
+          {CollectionList.map((item, key) => (
+            <CltItem
+              key={item.id}
+              img={item.img}
+              img_title={item.img_title}
+              price={item.price}
+              addToCart={() => addToCart(item)} // Pass the addToCart function
+            />
+          ))}
         </div>
       </div>
-      {/* <CartDropdown
-        cartItems={cartItems}
-        onIncrement={handleIncrement}
-        onDecrement={handleDecrement}
-        onDelete={handleDelete}
-        onCheckout={handleCheckout}
-        onClearCart={handleClearCart} // Pass the handleClearCart function
-      /> */}
     </div>
   );
 };
-
-const showCart = () => {}
 
 export default Collection;

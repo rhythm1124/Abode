@@ -85,6 +85,18 @@ function Main() {
     navigate('/ContactUs')
   }
 
+  const cart = () => {
+    navigate('/Cart')
+  }
+
+  const signUp = () => {
+    navigate('/SignUp')
+  }
+
+  const collection = () => {
+    navigate('/Collection')
+  }
+
   return (
     <div className="main">
       <Navbar />
@@ -136,11 +148,11 @@ function Main() {
       <footer>
         <div className="links">
           <ul>
-            <li>Our Collection</li>
-            <li>Contact Us</li>
-            <li>Cart</li>
-            <li>Logout</li>
-            <li>SignUp</li>
+            <li onClick={collection}>Our Collection</li>
+            <li onClick={contact}>Contact Us</li>
+            <li onClick={cart}>Cart</li>
+            <li onClick={logOut}>Logout</li>
+            <li onClick={signUp}>SignUp</li>
             <li>Socials</li>
           </ul>
         <div/>

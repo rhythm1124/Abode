@@ -58,4 +58,63 @@ function Main() {
     const navigate = useNavigate();
     const [cartItems, setCartItems] = useState([]);
     
+    const handleIncrement = (id) => {
+      setCartItems(cartitems.map(cartItem =>
+        cartItem.id === id ? { ...cartItem, quatity: cartItem.quantity + 1 } : cartItem
+      ));
+    };
+    const handleDecrement = (id) => {
+      setCartItems(cartItems.map(cartItem =>
+        cartItem.id === id && cartItem.quantity > 1 ? { ...cartItem, quantity: cartItem.quantity - 1 } : cartItem
+      ));
+    };
+  
+    const handleDelete = (id) => {
+      setCartItems(cartItems.filter(cartItem => cartItem.id !== id));
+    };
+  
+    const handleCheckout = () => {
+      alert('Proceeding to checkout');
+    };
+  
+    const handleClearCart = () => {
+      setCartItems([]); // Clear the cart by setting cartItems to an empty array
+    };
+  
+    const contact = () => {
+      navigate('/ContactUs');
+    };
+  
+    const cart = () => {
+      navigate('/Cart');
+    };
+  
+    const signUp = () => {
+      navigate('/SignUp');
+    };
+  
+    const collection = () => {
+      navigate('/Collection');
+    };
+  
+    const logOut = () => {
+      signOut(auth).then(() => {
+        navigate('/login');
+      }).catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage);
+      });
+    };
+
+    return (
+      <Navbar
+        cartItems={cartItems}
+        handleIncrement={handleIncrement}
+        handleDecrement={handleDecrement}
+        handleDelete={handleDelete}
+        handleCheckout={handleCheckout}
+        handleClearCart={handleClearCart}
+      />
+    )
 }

@@ -6,7 +6,7 @@ import WelcomePage from './components/welcomepage.js';
 import Main from './components/main.js';
 import ContactUs from './components/ContactUs.js';
 import Collection from './components/Collection.js';
-import CartDropdown from './components/CartDropdown.js';
+// import CartDropdown from './components/CartDropdown.js';
 import PhoneSignup from './components/phone_signup.js';
 
 // function App() {

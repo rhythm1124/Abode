@@ -1,87 +1,87 @@
 import React, { useState, useEffect } from 'react';
 import './Collection.css';
-import './navbar.css';
-import Logo from '../assets/logo.png';
-import Cart from '../assets/cart.png';
+// import './navbar.css';
+// import Logo from '../assets/logo.png';
+// import Cart from '../assets/cart.png';
 import { CollectionList } from './Collection-item-list.js';
 import CltItem from './Collection-item.js';
-import CartDropdown from './CartDropdown';
+// import CartDropdown from './CartDropdown';
 import { auth } from '../firebase';
 import { signOut } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 
-function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, handleCheckout, handleClearCart }) {
-  const [scrolled, setScrolled] = useState(false);
-  const [showCart, setShowCart] = useState(false);
+// function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, handleCheckout, handleClearCart }) {
+//   const [scrolled, setScrolled] = useState(false);
+//   const [showCart, setShowCart] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       if (window.scrollY > 0) {
+//         setScrolled(true);
+//       } else {
+//         setScrolled(false);
+//       }
+//     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+//     window.addEventListener('scroll', handleScroll);
+//     return () => {
+//       window.removeEventListener('scroll', handleScroll);
+//     };
+//   }, []);
 
-  const navigate = useNavigate();
+//   const navigate = useNavigate();
 
-  const toggleCartDropdown = () => {
-    setShowCart(!showCart);
-  };
+//   const toggleCartDropdown = () => {
+//     setShowCart(!showCart);
+//   };
 
-  const goToMainPage = () => {
-    navigate('/Main');
-  };
+//   const goToMainPage = () => {
+//     navigate('/Main');
+//   };
 
-  const openCollection = () => {
-    navigate('/Collection');
-  };
+//   const openCollection = () => {
+//     navigate('/Collection');
+//   };
 
-  const logOut = () => {
-    signOut(auth).then(() => {
-      navigate('/login');
-    }).catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log(errorCode, errorMessage);
-    });
-  };
+//   const logOut = () => {
+//     signOut(auth).then(() => {
+//       navigate('/login');
+//     }).catch((error) => {
+//       const errorCode = error.code;
+//       const errorMessage = error.message;
+//       console.log(errorCode, errorMessage);
+//     });
+//   };
 
-  return (
-    <nav className={scrolled ? 'navbar scrolled' : 'navbar'}>
-      <div className="leftside">
-        <div className="logo_container" onClick={goToMainPage}>
-          <img className="logo" src={Logo} alt="Logo" />
-        </div>
-      </div>
-      <div className="rightside">
-        <ul>
-          <li onClick={openCollection}>Our Collection</li>
-          <li onClick={logOut}>Logout</li>
-          <li>
-            <img className="Cart" src={Cart} alt="Cart" onClick={toggleCartDropdown} />
-            {showCart && (
-              <CartDropdown
-                cartItems={cartItems}
-                onIncrement={handleIncrement}
-                onDecrement={handleDecrement}
-                onDelete={handleDelete}
-                onCheckout={handleCheckout}
-                onClearCart={handleClearCart}
-              />
-            )}
-          </li>
-        </ul>
-      </div>
-    </nav>
-  );
-}
+//   return (
+//     <nav className={scrolled ? 'navbar scrolled' : 'navbar'}>
+//       <div className="leftside">
+//         <div className="logo_container" onClick={goToMainPage}>
+//           <img className="logo" src={Logo} alt="Logo" />
+//         </div>
+//       </div>
+//       <div className="rightside">
+//         <ul>
+//           <li onClick={openCollection}>Our Collection</li>
+//           <li onClick={logOut}>Logout</li>
+//           <li>
+//             <img className="Cart" src={Cart} alt="Cart" onClick={toggleCartDropdown} />
+//             {showCart && (
+//               <CartDropdown
+//                 cartItems={cartItems}
+//                 onIncrement={handleIncrement}
+//                 onDecrement={handleDecrement}
+//                 onDelete={handleDelete}
+//                 onCheckout={handleCheckout}
+//                 onClearCart={handleClearCart}
+//               />
+//             )}
+//           </li>
+//         </ul>
+//       </div>
+//     </nav>
+//   );
+// }
 
 const Collection = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -150,14 +150,14 @@ const Collection = () => {
 
   return (
     <div className="collection-container">
-      <Navbar
+      {/* <Navbar
         cartItems={cartItems}
         handleIncrement={handleIncrement}
         handleDecrement={handleDecrement}
         handleDelete={handleDelete}
         handleCheckout={handleCheckout}
         handleClearCart={handleClearCart}
-      />
+      /> */}
       <div className="collection-grid-container">
         <br/><br/><br/><br/>
         <div className="collection-item">

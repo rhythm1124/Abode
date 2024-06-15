@@ -1,3 +1,4 @@
+// import React from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { auth } from '../firebase';
@@ -6,8 +7,9 @@ import lamp from '../assets/lamp5.jpeg';
 import shelf from '../assets/sshelf2.jpeg';
 import sofa from '../assets/sofa2.1.jpg';
 // import Logo from '../assets/logo.png';
-// import Cart from '../assets/cart.png';
+import Cart from '../assets/cart.png';
 // import CartDropdown from './CartDropdown';
+// import Navbar from './navbar.js';
 // import './navbar.css';
 import './main.css';
 
@@ -64,58 +66,58 @@ import './main.css';
 // }
 
 function Main() {
-  // const navigate = useNavigate();
-  // const [cartItems, setCartItems] = useState([]);
+  const navigate = useNavigate();
+  const [cartItems, setCartItems] = useState([]);
 
-  // const handleIncrement = (id) => {
-  //   setCartItems(cartItems.map(cartItem =>
-  //     cartItem.id === id ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem
-  //   ));
-  // };
+  const handleIncrement = (id) => {
+    setCartItems(cartItems.map(cartItem =>
+      cartItem.id === id ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem
+    ));
+  };
 
-  // const handleDecrement = (id) => {
-  //   setCartItems(cartItems.map(cartItem =>
-  //     cartItem.id === id && cartItem.quantity > 1 ? { ...cartItem, quantity: cartItem.quantity - 1 } : cartItem
-  //   ));
-  // };
+  const handleDecrement = (id) => {
+    setCartItems(cartItems.map(cartItem =>
+      cartItem.id === id && cartItem.quantity > 1 ? { ...cartItem, quantity: cartItem.quantity - 1 } : cartItem
+    ));
+  };
 
-  // const handleDelete = (id) => {
-  //   setCartItems(cartItems.filter(cartItem => cartItem.id !== id));
-  // };
+  const handleDelete = (id) => {
+    setCartItems(cartItems.filter(cartItem => cartItem.id !== id));
+  };
 
-  // const handleCheckout = () => {
-  //   alert('Proceeding to checkout');
-  // };
+  const handleCheckout = () => {
+    alert('Proceeding to checkout');
+  };
 
-  // const handleClearCart = () => {
-  //   setCartItems([]); // Clear the cart by setting cartItems to an empty array
-  // };
+  const handleClearCart = () => {
+    setCartItems([]); // Clear the cart by setting cartItems to an empty array
+  };
 
-  // const contact = () => {
-  //   navigate('/ContactUs');
-  // };
+  const contact = () => {
+    navigate('/ContactUs');
+  };
 
-  // const cart = () => {
-  //   navigate('/Cart');
-  // };
+  const cart = () => {
+    navigate('/Cart');
+  };
 
-  // const signUp = () => {
-  //   navigate('/SignUp');
-  // };
+  const signUp = () => {
+    navigate('/SignUp');
+  };
 
-  // const collection = () => {
-  //   navigate('/Collection');
-  // };
+  const collection = () => {
+    navigate('/Collection');
+  };
 
-  // const logOut = () => {
-  //   signOut(auth).then(() => {
-  //     navigate('/login');
-  //   }).catch((error) => {
-  //     const errorCode = error.code;
-  //     const errorMessage = error.message;
-  //     console.log(errorCode, errorMessage);
-  //   });
-  // };
+  const logOut = () => {
+    signOut(auth).then(() => {
+      navigate('/login');
+    }).catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode, errorMessage);
+    });
+  };
 
   return (
     <div className="main">

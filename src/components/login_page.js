@@ -63,8 +63,13 @@ const Login_page=()=>{
         navigate('/PhoneSignup');
     }
     const onLogin = (e) => {
-        console.log("Signing in: " + username + ", " + password);
         e.preventDefault();
+        if (!username || password){
+            alert("Please fill in both the username and password fields.");
+            return;
+        }
+        console.log("Signing in: " + username + ", " + password);
+        // e.preventDefault();
         signInWithEmailAndPassword(auth, username, password)
         .then((userCredential) => {
             // Signed in

@@ -11,6 +11,7 @@ const SignUp=()=>{
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [confirmPassword, setConfirmPassword] = useState('');
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
 
@@ -18,6 +19,10 @@ const SignUp=()=>{
         console.log("Creating user with: " + email + ", " + password);
         e.preventDefault()
        
+        if(password !== confirmPassword){
+            alert("Passwords do not match. Please check and try again.");
+            return;
+        }
         createUserWithEmailAndPassword(auth, email, password)
           .then((userCredential) => {
               // Signed in
@@ -55,8 +60,10 @@ const SignUp=()=>{
                 <div className='input-boxb'>
                     <input type='password' placeholder='Password*' onChange={(e)=>setPassword(e.target.value)} required/>
                 </div>
-                    <center><button className='submit1'onClick={signUp}>SignUp</button></center>
-                    
+                <div className='input-boxc'>
+                    <input type='password' placeholder='Confirm Password*' onChange={(e) => setConfirmPassword(e.target.value)} required />
+                </div>
+                <center><button className='submit1'onClick={signUp}>SignUp</button></center> 
             </form>
         </div>
         </div>

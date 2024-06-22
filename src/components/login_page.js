@@ -64,9 +64,9 @@ const Login_page=()=>{
         },1000);
         
     };
-    const phoneClick = () => {
-        navigate('/PhoneSignup');
-    }
+    // const phoneClick = () => {
+    //     navigate('/PhoneSignup');
+    // }
     const onLogin = (e) => {
         e.preventDefault();
         if (!username || !password || !confirmPassword){
@@ -101,9 +101,9 @@ const Login_page=()=>{
         <div className='abc'>
         <button className="btn" onClick={googleLogIn}>
             <h3>Continue With Google</h3></button>
-        <button  className='btn1' onClick={phoneClick}>
+        {/* <button  className='btn1' onClick={phoneClick}>
             <h3>Continue With PhoneNo.</h3>
-        </button>
+        </button> */}
         <hr className='line'></hr>
         </div>
         <form>

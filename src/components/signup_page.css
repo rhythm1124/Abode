@@ -51,7 +51,7 @@ body {
     border: 2px solid rgba(192, 186, 186, .5);
     border-radius: 40px;
     font-size: 16px;
-    margin-top:60px;
+    margin-top:40px;
     padding-left: 20px;
 
   }
@@ -62,6 +62,9 @@ body {
     padding-left: 20px;
   }
   .input-boxb{
+    padding-left: 20px;
+  }
+  .input-boxc{
     padding-left: 20px;
   }
   .input-boxb input{
@@ -77,6 +80,19 @@ body {
     margin-top:20px;
     padding-left: 20px;
 
+  }
+  .input-boxc input{
+    width: 86%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(192, 186, 186, .5);
+    border-radius: 40px;
+    font-size: 16px;
+    margin: 10px;
+    margin-top:20px;
+    padding-left: 20px;
   }
   .input-box0 input{
     width: 86%;
@@ -100,10 +116,12 @@ body {
   .input-boxb input::placeholder{
     color: rgb(56,54,54);
   }
-
+.input-boxc input::placeholder{
+  color: rgb(56,54,54);
+}
 .submit1{
     width: 250px;
-    margin-top: 30px;
+    margin-top: 15px;
     height: 45px;
     background-color: azure;
     border: 2px solid rgb(192, 186, 186, .5);

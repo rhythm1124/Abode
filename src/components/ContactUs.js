@@ -16,11 +16,6 @@ const ContactUs=()=>{
                     <span>Email:</span><a href="mailto:abc@gmail.com">abc@gmail.com</a>
                 </li>
             </ul>
-            {/* <ul className="social-icons">
-                <li>
-
-                </li>
-            </ul> */}
             </div>
 
         <div className="form">

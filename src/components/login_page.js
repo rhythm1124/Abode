@@ -101,9 +101,6 @@ const Login_page=()=>{
         <div className='abc'>
         <button className="btn" onClick={googleLogIn}>
             <h3>Continue With Google</h3></button>
-        {/* <button  className='btn1' onClick={phoneClick}>
-            <h3>Continue With PhoneNo.</h3>
-        </button> */}
         <hr className='line'></hr>
         </div>
         <form>

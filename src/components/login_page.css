@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}    
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* justify-content: center; */
+  }
+  .outer1{
+    height: 100vh;
+    background-image: url('bg\ image3.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .login{
+    width: 450px;
+    background:transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    height: 450px;
+    border-radius: 20px;
+    padding:30px 20px;
+  }
+  .login h1{
+    font-size: 36px;
+    text-align: center;
+    color: rgb(56, 54, 54);
+  }
+  .input-box input{
+    width: 87%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(192, 186, 186, .5);
+    border-radius: 40px;
+    font-size: 16px;
+    margin-top:70px;
+    padding-left: 20px;
+
+  }
+  .input-box{
+    padding-left: 30px;
+    margin-top: 70px;
+  }
+  .input-box1{
+    padding-left: 20px;
+  }
+  .input-box1 input{
+    width: 86%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(192, 186, 186, .5);
+    border-radius: 40px;
+    font-size: 16px;
+    margin: 10px;
+    margin-top:20px;
+    padding-left: 20px;
+
+  }
+  .input-box input::placeholder{
+    color: rgb(56, 54, 54);
+  }
+  .input-box1 input::placeholder{
+    color: rgb(56, 54, 54);
+  }
+.abc{
+    text-align: center;
+    height: 40px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.line{
+    width: 80%;
+    height: 1px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.btn{
+    width: 85%;
+    height: 40px;
+    border: 2px solid rgb(192, 186, 186, .5);
+    border-radius: 40px;
+    border-color: #D6DDAC;
+    margin: 20px;
+    background-color: #D6DDAC;
+    color: rgb(56, 54, 54);
+
+}
+.btn1{
+    width: 85%;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid rgb(192, 186, 186, .5);
+    border-color: #D6DDAC;
+    background-color: #D6DDAC;
+    color: rgb(56, 54, 54);
+    
+}
+.submit{
+    width: 250px;
+    margin-bottom: 20px;
+    height: 45px;
+    background-color: #D6DDAC;
+    border: 2px solid rgb(192, 186, 186, .5);
+    border-radius: 40px;
+    margin-left: 20px;
+    font-size: 19px;
+    font-family: sans-serif;
+    color: rgb(56, 54, 54);
+}
+.register-link{
+    margin-top: 30px;
+    font-size: 17px;
+    color: rgb(56, 54, 54);
+    /* margin-left: 100px; */
+    /* margin-left: -40px; */
+} 
+a{
+  display: flex;
+  margin-top: -20px;
+  margin-left: 80px;
+}
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  

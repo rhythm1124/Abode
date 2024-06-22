@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}    
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+    min-height: 100vh;
+    /* background: url('bg\ image3.jpg')
+    no-repeat;
+    background-size: cover;
+    background-position: center; */
+  }
+.outer2{
+  background: url('bg\ image3.jpg')
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+  .signup{
+    width: 450px;
+    background:transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    height: 450px;
+    border-radius: 20px;
+    padding:40px 20px;
+    margin-top: 40px;
+    justify-self: center;
+    align-self: center;
+  }
+  .signup h1{
+    font-size: 36px;
+    text-align: center;
+    color: rgb(56,54,54);
+  }
+  .input-boxa input{
+    width: 87%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(192, 186, 186, .5);
+    border-radius: 40px;
+    font-size: 16px;
+    margin-top:60px;
+    padding-left: 20px;
+
+  }
+  .input-boxa{
+    padding-left: 30px;
+  }
+  .input-box0{
+    padding-left: 20px;
+  }
+  .input-boxb{
+    padding-left: 20px;
+  }
+  .input-boxb input{
+    width: 86%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(192, 186, 186, .5);
+    border-radius: 40px;
+    font-size: 16px;
+    margin: 10px;
+    margin-top:20px;
+    padding-left: 20px;
+
+  }
+  .input-box0 input{
+    width: 86%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(192, 186, 186, .5);
+    border-radius: 40px;
+    font-size: 16px;
+    margin: 10px;
+    margin-top:20px;
+    padding-left: 20px;
+  }
+  .input-boxa input::placeholder{
+    color: rgb(56,54,54);
+  }
+  .input-box0 input::placeholder{
+    color: rgb(56,54,54);
+  }
+  .input-boxb input::placeholder{
+    color: rgb(56,54,54);
+  }
+
+.submit1{
+    width: 250px;
+    margin-top: 30px;
+    height: 45px;
+    background-color: azure;
+    border: 2px solid rgb(192, 186, 186, .5);
+    border-radius: 40px;
+    margin-left: 20px;
+    font-size: 19px;
+    font-family: sans-serif;
+    color: rgb(56,54,54);
+    background-color: #D6DDAC;
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
+  

@@ -12,6 +12,7 @@ const provider = new GoogleAuthProvider();
 const Login_page=()=>{
     const [username, setUserName] = useState("");
     const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
     const navigate = useNavigate();
 
     const googleLogIn = (e) => {
@@ -48,6 +49,10 @@ const Login_page=()=>{
         setPassword(e.target.value);
     }
 
+    const handleConfirmPasswordChange = (e) => {
+        setConfirmPassword(e.target.value);
+    }
+
     const handleSignUpClick = () => {
         navigate('/signup');
       };
@@ -64,8 +69,12 @@ const Login_page=()=>{
     }
     const onLogin = (e) => {
         e.preventDefault();
-        if (!username || password){
+        if (!username || !password || !confirmPassword){
             alert("Please fill in both the username and password fields.");
+            return;
+        }
+        if(password !== confirmPassword){
+            alert("Passwords do not match. Please check and try again.");
             return;
         }
         console.log("Signing in: " + username + ", " + password);
@@ -104,6 +113,9 @@ const Login_page=()=>{
             <div className='input-box1'>
                 <input type='password' placeholder='Password*' onChange={handlePasswordChange} required/>
             </div>
+            <div className='input-box2'>
+                        <input type='password' placeholder='Confirm Password*' onChange={handleConfirmPasswordChange} required />
+                    </div>
                 <center><button className='submit' onClick={onLogin}>Login</button></center>
             <div className='register-link'>
                 <p>Don't have an account?<a href='#' onClick={handleSignUpClick}>SignUp</a></p>

@@ -7,18 +7,18 @@ body, input, textarea, a{
 }
 .section{
     margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     width: 100%;
     padding: 10px;
-    /* margin-top: -10px; */
+    
 }
 .box{
     margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     position: relative;
     display: table;
     width: 1100px;
@@ -28,9 +28,9 @@ body, input, textarea, a{
 }
 .info{
     margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     width: 35%;
     height: 551px;
     padding: 40px;
@@ -41,19 +41,18 @@ body, input, textarea, a{
 }
 .title{
     margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     text-align: left;
     font-size: 40px;
     letter-spacing: 0.5px;
-
 }
 .sub-title{
     margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     font-size: 18px;
     font-weight: 300px;
     margin-top: 50px;
@@ -62,42 +61,42 @@ body, input, textarea, a{
 }
 .details{
     margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     list-style: none;
     margin: 40px 0px ;
 }
 .details li{
     margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     margin-top: 25px;
     font-size: 18px;
-    /* color: grey; */
+    
 }
 .details li a{
     margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     color: black;
     text-decoration: none;
     margin:1px;
 }
 .details li a:hover{
     margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     color: rgb(75, 75, 86);
 }
 .form{
     margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     width: 65%;
     float: right;
     padding: 38px;
@@ -106,9 +105,9 @@ body, input, textarea, a{
 }
 .form-title{
     margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     text-align: left;
     margin-left: 23px;
     font-size: 31px;
@@ -116,18 +115,18 @@ body, input, textarea, a{
 }
 .fields{
     margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     display: table;
     width: 100%;
     padding: 15px 5px 5px 5px;
 }
 .fields input, .fields textarea{
     margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     border: none;
     outline: none;
     background: none;
@@ -138,17 +137,16 @@ body, input, textarea, a{
 }
 .fields textarea{
     margin: 0;
-        /* padding: 0; */
-        box-sizing: border-box;
-        overflow: hidden;
+    box-sizing: border-box;
+    overflow: hidden;
     height: 150px;
     resize: none;
 }
 .group{
     margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     width: 46%;
     float: left;
     padding: 0px 30px;
@@ -157,17 +155,16 @@ body, input, textarea, a{
     box-shadow: inset 4px 4px 4px #cbc3d1 , inset -4px -4px 4px #ffffff;
 }
 .fields .group:last-child{
-    /* margin: 0; */
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     width: 96%;
 }
 .submit{
     margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     width: 60%;
     height: 60px;
     margin: 0px 12px;
@@ -182,9 +179,5 @@ body, input, textarea, a{
     box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #555;
 }
 .submit:hover{
-    margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
     background:#D6DDAC;
 }

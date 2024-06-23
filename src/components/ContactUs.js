@@ -2,6 +2,11 @@ import React from "react";
 import './ContactUs.css';
 
 const ContactUs=()=>{
+    const onSubmit = (e) =>{
+        e.preventDefault();
+        alert('Your message has been sent successfully');
+    };
+
     return(
        <div className="section">
         <div className="box">
@@ -35,7 +40,7 @@ const ContactUs=()=>{
                         <textarea name="message" id="" placeholder="Write your message"/>
                     </div>
                 </div>
-                <input type="submit" value="Send message" className="submit"/>
+                <input type="submit" value="Send message" className="submit" onClick={onSubmit}/>
             </form>
         </div>
         </div>

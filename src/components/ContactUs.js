@@ -37,7 +37,7 @@ const ContactUs=()=>{
                         <input type="email" className="email" placeholder="Email Id"/>
                     </div>
                     <div className="group">
-                        <textarea name="message" id="" placeholder="Write your message"/>
+                        <textarea name="message" id="a" placeholder="Write your message"/>
                     </div>
                 </div>
                 <input type="submit" value="Send message" className="submit" onClick={onSubmit}/>

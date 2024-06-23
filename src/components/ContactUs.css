@@ -152,7 +152,7 @@ body, input, textarea, a{
     padding: 0px 30px;
     margin: 14px 12px;
     border-radius: 25px;
-    box-shadow: inset 4px 4px 4px #cbc3d1 , inset -4px -4px 4px #ffffff;
+    box-shadow: 4px 4px 4px #d3cbcb , -4px -4px 4px #d3cbcb;
 }
 .fields .group:last-child{
     padding: 0;
@@ -180,4 +180,7 @@ body, input, textarea, a{
 }
 .submit:hover{
     background:#D6DDAC;
+}
+#a{
+    padding: 25px;
 }

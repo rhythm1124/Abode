@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import './ContactUs.css';
 
 const ContactUs=()=>{
+    const [formData, setFormData] = useState({
+        firstName:'',
+        lastName:'',
+        email:'',
+        message:''
+    });
+
+    const handleChange = (e) => {
+        const {name,  value} = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    };
+
     const onSubmit = (e) =>{
         e.preventDefault();
+        const {firstName, lastName, email, message} = formData;
+        
+        if(!firstName || !lastName || !email || !message){
+            alert("Please fill up all the details.");
+            return;
+        }
         alert('Your message has been sent successfully');
     };
 
@@ -28,16 +49,16 @@ const ContactUs=()=>{
                 <h2 className="form-title">Send us a message </h2>
                 <div className="fields">
                     <div className="group">
-                        <input type="text" className="fname" placeholder="First Name"/>
+                        <input type="text" className="fname" placeholder="First Name" value={formData.firstName} onChange={handleChange} required/>
                     </div>
                     <div className="group">
-                        <input type="text" className="lname" placeholder="Last Name"/>
+                        <input type="text" className="lname" placeholder="Last Name" value={formData.lastName} onChange={handleChange} required/>
                     </div>
                     <div className="group">
-                        <input type="email" className="email" placeholder="Email Id"/>
+                        <input type="email" className="email" placeholder="Email Id" value={formData.email} onChange={handleChange} required/>
                     </div>
                     <div className="group">
-                        <textarea name="message" id="a" placeholder="Write your message"/>
+                        <textarea name="message" id="a" placeholder="Write your message" value={formData.message} onChange={handleChange} required/>
                     </div>
                 </div>
                 <input type="submit" value="Send message" className="submit" onClick={onSubmit}/>

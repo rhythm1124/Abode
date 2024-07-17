@@ -35,7 +35,6 @@ function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, han
   const [scrolled, setScrolled] = useState(false);
   const [showCart, setShowCart] = useState(false);
 
-<<<<<<< HEAD
 function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, handleCheckout, handleClearCart }) {
   const [scrolled, setScrolled] = useState(false);
   const [showCart, setShowCart] = useState(false);

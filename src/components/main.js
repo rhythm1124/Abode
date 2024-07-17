@@ -72,58 +72,58 @@ function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, han
 }
 
 function Main() {
-  // const navigate = useNavigate();
-  // const [cartItems, setCartItems] = useState([]);
+  const navigate = useNavigate();
+  const [cartItems, setCartItems] = useState([]);
 
-  // const handleIncrement = (id) => {
-  //   setCartItems(cartItems.map(cartItem =>
-  //     cartItem.id === id ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem
-  //   ));
-  // };
+  const handleIncrement = (id) => {
+    setCartItems(cartItems.map(cartItem =>
+      cartItem.id === id ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem
+    ));
+  };
 
-  // const handleDecrement = (id) => {
-  //   setCartItems(cartItems.map(cartItem =>
-  //     cartItem.id === id && cartItem.quantity > 1 ? { ...cartItem, quantity: cartItem.quantity - 1 } : cartItem
-  //   ));
-  // };
+  const handleDecrement = (id) => {
+    setCartItems(cartItems.map(cartItem =>
+      cartItem.id === id && cartItem.quantity > 1 ? { ...cartItem, quantity: cartItem.quantity - 1 } : cartItem
+    ));
+  };
 
-  // const handleDelete = (id) => {
-  //   setCartItems(cartItems.filter(cartItem => cartItem.id !== id));
-  // };
+  const handleDelete = (id) => {
+    setCartItems(cartItems.filter(cartItem => cartItem.id !== id));
+  };
 
-  // const handleCheckout = () => {
-  //   alert('Proceeding to checkout');
-  // };
+  const handleCheckout = () => {
+    alert('Proceeding to checkout');
+  };
 
-  // const handleClearCart = () => {
-  //   setCartItems([]); // Clear the cart by setting cartItems to an empty array
-  // };
+  const handleClearCart = () => {
+    setCartItems([]); // Clear the cart by setting cartItems to an empty array
+  };
 
-  // const contact = () => {
-  //   navigate('/ContactUs');
-  // };
+  const contact = () => {
+    navigate('/ContactUs');
+  };
 
-  // const cart = () => {
-  //   navigate('/Cart');
-  // };
+  const cart = () => {
+    navigate('/Cart');
+  };
 
-  // const signUp = () => {
-  //   navigate('/SignUp');
-  // };
+  const signUp = () => {
+    navigate('/SignUp');
+  };
 
-  // const collection = () => {
-  //   navigate('/Collection');
-  // };
+  const collection = () => {
+    navigate('/Collection');
+  };
 
-  // const logOut = () => {
-  //   signOut(auth).then(() => {
-  //     navigate('/login');
-  //   }).catch((error) => {
-  //     const errorCode = error.code;
-  //     const errorMessage = error.message;
-  //     console.log(errorCode, errorMessage);
-  //   });
-  // };
+  const logOut = () => {
+    signOut(auth).then(() => {
+      navigate('/login');
+    }).catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode, errorMessage);
+    });
+  };
 
   return (
     <div className="main">

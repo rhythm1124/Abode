@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import lamp from '../assets/lamp5.jpeg';
 import shelf from '../assets/sshelf2.jpeg';
 import sofa from '../assets/sofa2.1.jpg';
+<<<<<<< HEAD
 import Logo from '../assets/logo.png';
 import Cart from '../assets/cart.png';
 import CartDropdown from './CartDropdown';
@@ -11,6 +12,8 @@ import './navbar.css';
 // import Cart from '../assets/cart.png';
 // import CartDropdown from './CartDropdown';
 // import './navbar.css';
+=======
+>>>>>>> parent of aa8afd8 (creating navbar)
 import './main.css';
 import Logo from '../assets/logo.png';
 import Cart from '../assets/cart.png';
@@ -19,6 +22,7 @@ import './navbar.css';
 import { useNavigate } from 'react-router-dom';
 import { auth } from '../firebase';
 import { signOut } from 'firebase/auth';
+<<<<<<< HEAD
 
 function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, handleCheckout, handleClearCart }) {
   const [scrolled, setScrolled] = useState(false);
@@ -76,8 +80,14 @@ function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, han
   const goToMainPage = () => {
     navigate('/Main');
   };
+=======
+>>>>>>> parent of aa8afd8 (creating navbar)
 
+function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, handleCheckout, handleClearCart }) {
+  const [scrolled, setScrolled] = useState(false);
+  const [showCart, setShowCart] = useState(false);
 
+<<<<<<< HEAD
   const openCollection = () => {
     navigate('/Collection');
   };
@@ -146,6 +156,33 @@ function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, han
     navigate('/Main');
   };
 
+=======
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const navigate = useNavigate();
+
+  const toggleCartDropdown = () => {
+    setShowCart(!showCart);
+  };
+
+  const goToMainPage = () => {
+    navigate('/Main');
+  };
+
+>>>>>>> parent of aa8afd8 (creating navbar)
   const openCollection = () => {
     navigate('/Collection');
   };
@@ -247,7 +284,10 @@ function Main() {
   return (
     <div className="main">
       <Navbar
+<<<<<<< HEAD
       <Navbar
+=======
+>>>>>>> parent of aa8afd8 (creating navbar)
         cartItems={cartItems}
         handleIncrement={handleIncrement}
         handleDecrement={handleDecrement}

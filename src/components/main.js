@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { auth } from '../firebase';
-import { signOut } from 'firebase/auth';
 import lamp from '../assets/lamp5.jpeg';
 import shelf from '../assets/sshelf2.jpeg';
 import sofa from '../assets/sofa2.1.jpg';
+<<<<<<< HEAD
 <<<<<<< HEAD
 import Logo from '../assets/logo.png';
 import Cart from '../assets/cart.png';
@@ -17,9 +15,22 @@ import './navbar.css';
 // import CartDropdown from './CartDropdown';
 // import './navbar.css';
 >>>>>>> parent of 3938a8a (update nav)
+=======
+>>>>>>> parent of aa8afd8 (creating navbar)
 import './main.css';
+import Logo from '../assets/logo.png';
+import Cart from '../assets/cart.png';
+import CartDropdown from './CartDropdown';
+import './navbar.css';
+import { useNavigate } from 'react-router-dom';
+import { auth } from '../firebase';
+import { signOut } from 'firebase/auth';
 
+function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, handleCheckout, handleClearCart }) {
+  const [scrolled, setScrolled] = useState(false);
+  const [showCart, setShowCart] = useState(false);
 
+<<<<<<< HEAD
 function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, handleCheckout, handleClearCart }) {
   const [scrolled, setScrolled] = useState(false);
   const [showCart, setShowCart] = useState(false);
@@ -38,9 +49,50 @@ function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, han
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+=======
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
 
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
+  const navigate = useNavigate();
+>>>>>>> parent of aa8afd8 (creating navbar)
 
+  const toggleCartDropdown = () => {
+    setShowCart(!showCart);
+  };
+
+  const goToMainPage = () => {
+    navigate('/Main');
+  };
+
+<<<<<<< HEAD
+=======
+  const openCollection = () => {
+    navigate('/Collection');
+  };
+
+  const logOut = () => {
+    signOut(auth).then(() => {
+      navigate('/login');
+    }).catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode, errorMessage);
+    });
+  };
+
+>>>>>>> parent of aa8afd8 (creating navbar)
   return (
     <nav className={scrolled ? 'navbar scrolled' : 'navbar'}>
       <div className="leftside">

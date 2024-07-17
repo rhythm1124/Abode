@@ -6,64 +6,64 @@ import { signOut } from 'firebase/auth';
 import lamp from '../assets/lamp5.jpeg';
 import shelf from '../assets/sshelf2.jpeg';
 import sofa from '../assets/sofa2.1.jpg';
-// import Logo from '../assets/logo.png';
+import Logo from '../assets/logo.png';
 import Cart from '../assets/cart.png';
-// import CartDropdown from './CartDropdown';
-// import Navbar from './navbar.js';
-// import './navbar.css';
+import CartDropdown from './CartDropdown';
+import Navbar from './navbar.js';
+import './navbar.css';
 import './main.css';
 
 
-// function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, handleCheckout, handleClearCart }) {
-//   const [scrolled, setScrolled] = useState(false);
-//   const [showCart, setShowCart] = useState(false);
+function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, handleCheckout, handleClearCart }) {
+  const [scrolled, setScrolled] = useState(false);
+  const [showCart, setShowCart] = useState(false);
 
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       if (window.scrollY > 0) {
-//         setScrolled(true);
-//       } else {
-//         setScrolled(false);
-//       }
-//     };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
 
-//     window.addEventListener('scroll', handleScroll);
-//     return () => {
-//       window.removeEventListener('scroll', handleScroll);
-//     };
-//   }, []);
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
 
 
-//   return (
-//     <nav className={scrolled ? 'navbar scrolled' : 'navbar'}>
-//       <div className="leftside">
-//         <div className="logo_container" onClick={goToMainPage}>
-//           <img className="logo" src={Logo} alt="Logo" />
-//         </div>
-//       </div>
-//       <div className="rightside">
-//         <ul>
-//           <li onClick={openCollection}>Our Collection</li>
-//           <li onClick={logOut}>Logout</li>
-//           <li>
-//             <img className="Cart" src={Cart} alt="Cart" onClick={toggleCartDropdown} />
-//             {showCart && (
-//               <CartDropdown
-//                 cartItems={cartItems}
-//                 onIncrement={handleIncrement}
-//                 onDecrement={handleDecrement}
-//                 onDelete={handleDelete}
-//                 onCheckout={handleCheckout}
-//                 onClearCart={handleClearCart}
-//               />
-//             )}
-//           </li>
-//         </ul>
-//       </div>
-//     </nav>
-//   );
-// }
+  return (
+    <nav className={scrolled ? 'navbar scrolled' : 'navbar'}>
+      <div className="leftside">
+        <div className="logo_container" onClick={goToMainPage}>
+          <img className="logo" src={Logo} alt="Logo" />
+        </div>
+      </div>
+      <div className="rightside">
+        <ul>
+          <li onClick={openCollection}>Our Collection</li>
+          <li onClick={logOut}>Logout</li>
+          <li>
+            <img className="Cart" src={Cart} alt="Cart" onClick={toggleCartDropdown} />
+            {showCart && (
+              <CartDropdown
+                cartItems={cartItems}
+                onIncrement={handleIncrement}
+                onDecrement={handleDecrement}
+                onDelete={handleDelete}
+                onCheckout={handleCheckout}
+                onClearCart={handleClearCart}
+              />
+            )}
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+}
 
 function Main() {
   const navigate = useNavigate();
@@ -121,14 +121,14 @@ function Main() {
 
   return (
     <div className="main">
-      {/* <Navbar
+      <Navbar
         cartItems={cartItems}
         handleIncrement={handleIncrement}
         handleDecrement={handleDecrement}
         handleDelete={handleDelete}
         handleCheckout={handleCheckout}
         handleClearCart={handleClearCart}
-      /> */}
+      />
       <div className="parallax"></div>
       <div className="main_container">
         <div className="content">

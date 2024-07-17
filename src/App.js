@@ -7,7 +7,7 @@ import Navbar from './components/navbar.js';
 import Main from './components/main.js';
 import ContactUs from './components/ContactUs.js';
 import Collection from './components/Collection.js';
-// import CartDropdown from './components/CartDropdown.js';
+import CartDropdown from './components/CartDropdown.js';
 import PhoneSignup from './components/phone_signup.js';
 
 // function App() {
@@ -50,7 +50,7 @@ const App = () => {
         <Route path="/Navbar" element={<Navbar/>}/>
         <Route path="/Main" element={<Main/>}/>
         <Route path="/Collection" element={<Collection/>}/>
-        {/* <Route path="/Cart" element={<CartDropdown/>}/> */}
+        <Route path="/Cart" element={<CartDropdown/>}/>
         <Route path="/ContactUs" element={<ContactUs/>}/>
       </Routes>
     </Router>

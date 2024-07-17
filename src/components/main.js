@@ -2,21 +2,15 @@ import React, { useState, useEffect } from 'react';
 import lamp from '../assets/lamp5.jpeg';
 import shelf from '../assets/sshelf2.jpeg';
 import sofa from '../assets/sofa2.1.jpg';
-<<<<<<< HEAD
-<<<<<<< HEAD
 import Logo from '../assets/logo.png';
 import Cart from '../assets/cart.png';
 import CartDropdown from './CartDropdown';
 import Navbar from './navbar.js';
 import './navbar.css';
-=======
 // import Logo from '../assets/logo.png';
 // import Cart from '../assets/cart.png';
 // import CartDropdown from './CartDropdown';
 // import './navbar.css';
->>>>>>> parent of 3938a8a (update nav)
-=======
->>>>>>> parent of aa8afd8 (creating navbar)
 import './main.css';
 import Logo from '../assets/logo.png';
 import Cart from '../assets/cart.png';
@@ -60,7 +54,6 @@ function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, han
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-=======
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -77,8 +70,6 @@ function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, han
   }, []);
 
   const navigate = useNavigate();
->>>>>>> parent of aa8afd8 (creating navbar)
-
   const toggleCartDropdown = () => {
     setShowCart(!showCart);
   };
@@ -87,8 +78,7 @@ function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, han
     navigate('/Main');
   };
 
-<<<<<<< HEAD
-=======
+
   const openCollection = () => {
     navigate('/Collection');
   };
@@ -103,7 +93,6 @@ function Navbar({ cartItems, handleIncrement, handleDecrement, handleDelete, han
     });
   };
 
->>>>>>> parent of aa8afd8 (creating navbar)
   return (
     <nav className={scrolled ? 'navbar scrolled' : 'navbar'}>
       <div className="leftside">
@@ -266,7 +255,6 @@ function Main() {
         handleDelete={handleDelete}
         handleCheckout={handleCheckout}
         handleClearCart={handleClearCart}
-      />
       />
       <div className="parallax"></div>
       <div className="main_container">
